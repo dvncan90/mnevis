@@ -68,8 +68,11 @@ menu:hover{
          width: 350px;
 }
 @media (max-width: 1280px){
+	 .logo {
+	height:80px;
+	width: auto;
 	body header {
-       
+               
         height: 100px;
 @media (max-width: 768px){
 }

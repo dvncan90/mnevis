@@ -65,9 +65,12 @@ menu:hover{
 
 @media (max-width: 1280px){
 	.card {
-    width: 350px;
+         width: 350px;
 }
-
+@media (max-width: 1280px){
+	body header {
+       
+        height: 100px;
 @media (max-width: 768px){
 }
 

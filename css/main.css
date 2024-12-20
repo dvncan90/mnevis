@@ -109,11 +109,125 @@ menu:hover{
 @media screen{
 }
 
-@media (min-aspect-ratio:3/4){.logo {
+@charset "utf-8";
+
+body header {
+    width: calc(100% - 20px);
+    height: 50px;
+    background-color: #1014b4;
+    position: fixed;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+    border-bottom-style: solid;
+    border-top: 10px solid #090A2D;
+	 border-left: 10px solid #090A2D;
+	border-right: 10px solid #090A2D;
+}
+.card {
+    width:calc(25% - 2px);
+    margin: 1px;
+    float: left;
+    opacity: 1;
+    transition: 0.5s;
+}
+.card:hover {
+    opacity:0.9;
+    transition:1s;
+}
+.card:hover {
+    scale:100%;
+	transition:0.3s;
+
+}
+Logo {
+    margin-top: 9px;
+}
+.logo {
+    margin-top: 6px;
+}
+
+lista {
+    overflow-x: hidden;
+    
+    height: auto;
+    position: relative;
+    top: 50px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    
+}
+menu {
+    margin-right: 50px;
+    float: right;
+    font-family: 'Arvo Regular';
+    color: white;
+    padding-left: 0px;
+    margin-left: -39px;
+    padding-top: 3px;
+}
+menu:hover{
+	font:bold;
+	background-color: #9ea2a9;
+		
+}
+.logo {
+}
+.cardlarge {
+	 width: 100%;
+    
+    float: left;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+@media (max-width: 1920px){
+}
+
+@media (max-width: 1440px){
+	.card {
+         width: calc(33.33333% - 2px);
+}
+
+@media (max-width: 1280px){
+	.card {
+         width: calc(50% - 2px);
+	
+}
+
+	 
+@media (max-width: 768px){
+	.card {
+         width: 100%;
+	}
+
+
+@media (max-width: 360px){
+.card {
+    width: 100%;
+	
+
+}
+
+	
+
+
+@media (max-width:2000px){
+
+@media screen{
+}
+
+@media (max-aspect-ratio:3/4){
+	.logo {
 	height:80px;
 	width: auto;}
 	
 	body header {
                
         height: 100px;}
+}
+
 }

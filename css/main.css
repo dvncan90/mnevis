@@ -14,13 +14,13 @@ body header {
 	border-right: -10px solid #090A2D;
 }
 .card {
+	width:20%;
     margin:1px;
-	float: left;
-	opacity:1;
+    float: left;
+    opacity:1;
     transition:0.5s;}
 .card:hover {
-    
-	opacity:0.5;
+    opacity:0.5;
     transition:1s;
 }
 .card:hover {
@@ -72,7 +72,7 @@ menu:hover{
 
 @media (max-width: 1280px){
 	.card {
-         width: 350px;
+         width: 20%;
 }
 @media (max-width: 1280px){
 	 .logo {
@@ -100,5 +100,5 @@ menu:hover{
 	 max-width: 2500px
 }
 	card {
-    width: 500px;
+    width: 20%;
 	}

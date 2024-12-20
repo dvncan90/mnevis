@@ -1,10 +1,17 @@
+@charset "utf-8";
+
 body header {
     width: 100%;
     height: 50px;
-    background-color: #646D7A;
+    background-color: #1014b4;
     position: fixed;
     margin-left: -8px;
     margin-top: -8px;
+    
+    border-bottom-style: solid;
+    border-top: 10px solid #090A2D;
+	 border-left: 10px solid #090A2D;
+	border-right: -10px solid #090A2D;
 }
 .card {
     margin:1px;
@@ -29,15 +36,15 @@ Logo {
 }
 
 lista {
-    background-color: #E9E9E9;
+    background-color: #090a2d;
     height: 1820px;
     position: absolute;
     top: 50px;
     float: right;
     width: 100%;
     padding-right: 0px;
-    margin-top: 37px;
-    margin-left: 50px;
+    margin-top: 0px;
+    margin-left: 1px;
     
 }
 menu {

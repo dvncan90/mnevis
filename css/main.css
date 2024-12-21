@@ -14,7 +14,7 @@
 body header {
     width: calc(100% - 20px);
     height: 50px;
-    background-color: #E7E7E7;
+    background-color: #1014b4;
     position: fixed;
     margin-left: 0px;
     margin-top: 0px;
@@ -163,14 +163,20 @@ body header:enabled .padajuci {
 @media (max-width: 360px){
 .card {
     width: 100%;
-	
-
 }
-
-	
-
 
 @media (max-width:2000px){
 
-
+}
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    body header {
+    width: calc(100% - 20px);
+		height: 150px;}
+	
+    .logo {
+    width: 150px;
+    opacity: 0.87;
+}
 }

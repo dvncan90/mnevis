@@ -203,7 +203,7 @@ lista {
 
 	
 	
-	@media (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (-webkit-min-device-pixel-ratio: 3)
  {
 	
 		body header {height: 150px;}

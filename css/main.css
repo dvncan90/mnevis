@@ -166,17 +166,17 @@ lista {
 
 
 
-@media (max-width: 1920px){
+@media (max-width:1920px) and (min-width:1281px){
 }
 
-@media (max-width: 1440px){
+@media ( max-width: 1440px){
 	.card {
-         width: calc(33.33333% - 2px);
+         width: calc(33.33333% - 8px);
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) and (min-width:769px){
 	.card {
-         width: calc(50% - 2px);
+         width: calc(50% - 8px);
 	
 }
 
@@ -196,3 +196,12 @@ lista {
 
 }
 
+
+@media (max-width:1280px) and (min-width:780px){
+}
+
+@media (min-width:769px) and (max-width:1440px){
+}
+
+@media (min-width:769px) and (max-width:1280px){
+}

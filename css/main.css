@@ -203,7 +203,7 @@ lista {
 
 	
 	
-	@media (min-resolution: 3x)
+	@media (min-resolution: 2x)
  {
 	
 		body header {height: 150px;}

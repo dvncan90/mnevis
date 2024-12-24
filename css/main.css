@@ -62,9 +62,9 @@ label div {
 #menu_checkbox:checked + label dive:nth-child(4) {display: block;transition: 0.4s;}
 #menu_checkbox:checked + label dive:nth-child(5) {display: block ;transition: 0.4s;}
 
-label dive:hover:nth-child(3) {opacity: 0.8;}
-label dive:hover:nth-child(4) {opacity: 0.8;}
-label dive:hover:nth-child(5) {opacity: 0.8;}
+label dive:hover:nth-child(3) {opacity: 1;}
+label dive:hover:nth-child(4) {opacity: 1;}
+label dive:hover:nth-child(5) {opacity: 1;}
 
 label dive:hover:nth-child(3) .meniglavni{margin-right:40px;}
 label dive:hover:nth-child(4) .meniglavni{margin-right:40px;}
@@ -100,7 +100,7 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;}
     display: none;
     left: 20px;
     float: none;
-    opacity: 0.4;
+    opacity: 0.8;
     -webkit-box-shadow: 0 0px 0 0 #393CC1;
     box-shadow: 0 0px 0 0 #393CC1;
   

@@ -203,9 +203,8 @@ lista {
 
 	
 	
-	
-@media only screen 
-        and (-webkit-device-pixel-ratio: 3) {
+	@media (min-resolution: 3x)
+ {
 	
 		body header {height: 150px;}
 		.logo {height: 150px;}

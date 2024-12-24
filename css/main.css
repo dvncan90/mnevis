@@ -166,20 +166,29 @@ lista {
 
 
 
-@media (max-width:1920px) and (min-width:1281px){
+@media (max-width:1920px) and (min-width:1441px){
 }
 
-@media ( max-width: 1440px){
+
+
+
+
+@media ( max-width: 1440px)and (min-width:1281px){
 	.card {
          width: calc(33.33333% - 8px);
 }
 
+	
+	
+	
 @media (max-width: 1280px) and (min-width:769px){
 	.card {
          width: calc(50% - 8px);
 	
 }
 
+	
+	
 	 
 @media (max-width: 768px){
 	.card {

@@ -131,7 +131,7 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;}
     transition:1s;
 }
 .card:hover {
-    scale:100%;
+    scale:105%;
 	transition:0.3s;
 
 
@@ -204,15 +204,12 @@ lista {
 	
 	
 	
-	@media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
+@media only screen 
+        and (-webkit-device-pixel-ratio: 3) {
 	
 		body header {height: 150px;}
 		.logo {height: 150px;}
     
 		
-		
-		
+			
 	}

@@ -213,4 +213,4 @@ body header {height: 150px;}
 	}
 
 @media (orientation: portrait) {
-	 .card { width: calc(50% - 8px);}
+	 .card { width: calc(50% - 8px);}}

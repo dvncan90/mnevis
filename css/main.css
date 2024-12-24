@@ -206,9 +206,8 @@ lista {
 @media only screen and (-webkit-min-device-pixel-ratio: 3)
  {
 	
-		body header {height: 150px;}
-		.logo {height: 150px;}
-    
-		
+body header {height: 150px;}
+.logo {height: 150px;}
+.card { width: calc(50% - 8px);		
 			
 	}

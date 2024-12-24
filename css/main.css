@@ -6,6 +6,7 @@
 @import url("../webfonts/LexendDeca_Medium/stylesheet.css");
 @import url("../webfonts/LexendDeca_Regular/stylesheet.css");
 
+
 #menu_checkbox {
     display: none;
 }
@@ -66,9 +67,9 @@ label dive:hover:nth-child(3) {opacity: 1;}
 label dive:hover:nth-child(4) {opacity: 1;}
 label dive:hover:nth-child(5) {opacity: 1;}
 
-label dive:hover:nth-child(3) .meniglavni{margin-right:40px;}
-label dive:hover:nth-child(4) .meniglavni{margin-right:40px;}
-label dive:hover:nth-child(5) .meniglavni{margin-right:40px;}
+label dive:hover:nth-child(3) .meniglavni{margin-right:40px;transition: 0.1s;}
+label dive:hover:nth-child(4) .meniglavni{margin-right:40px;transition: 0.1s;}
+label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
 
 .meniglavni {
 	opacity: 1;
@@ -157,60 +158,27 @@ lista {
     margin-left: 6px;
 	margin-right: 6px;
 	margin-bottom: 4px;
-    width: calc(100% - 12px);
+	width: calc(100% - 12px);}
     
+@media (min-width: 1281px) and (max-width: 1440px){
+      .card {
+		  width: calc(33.33333% - 8px);}
+	}
 
-}
-
-
-
-
-
-@media (max-width:1920px) and (min-width:1441px){
-}
-
-
-
-
-
-@media ( max-width: 1440px)and (min-width:1281px){
+@media (min-width: 769px) and (max-width: 1280px){
 	.card {
-         width: calc(33.33333% - 8px);
+		width: calc(50% - 8px);}
 }
 
-	
-	
-	
-@media (max-width: 1280px) and (min-width:769px){
-	.card {
-         width: calc(50% - 8px);
-	
-}
-
-	
-	
-	 
 @media (max-width: 768px){
 	.card {
-         width: 100%;
-	}
-
-
-@media (max-width: 360px){
-.card {
-    width: 100%;
+		width:calc(100% - 8px);}
 }
 
-	
-	
-@media only screen and (-webkit-min-device-pixel-ratio: 3)
- {
-	
-body header {height: 150px;}
-.logo {height: 150px;}
-.card { width: calc(50% - 8px);		
-			
-	}
 
-@media (orientation: portrait) {
-	 .card { width: calc(50% - 8px);}}
+
+
+
+
+
+

@@ -32,17 +32,20 @@ body header {
     background-color: #F0F0F0;
     position: fixed;
     margin-left: 0px;
-    margin-top: 0px;
-    border-bottom-style: solid;
-    border-top: 10px solid #090A2D;
-    border-left: 10px solid #090A2D;
-    border-right: 10px solid #090A2D;
+    border-top: 10px solid #000000;
+    border-left: 10px solid #000000;
+    border-right-color: #000000;
+    border-right-width: 10px;
     z-index: 3;
     opacity: 1;
     text-shadow: 0px 0px 0px;
+    top: 0px;
+    border-bottom: 2px solid #000000;
 }
 body p {
     height: 1100px;
+    border-top-style: solid;
+    border-top-width: 10px;
 }
 label div {
   position: relative;
@@ -84,17 +87,18 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
 }
 
 .logo {
-	height: 50px;
+    height: 50px;
     width: auto;
     opacity: 0.87;
     background-color: #F44236;
+    border-right: 2px solid #000000;
 }
 
 .padajucii{
     
     width: calc(100% - 40px);
     height: 100px;
-    background-color: #090A2D;
+    background-color: #404040;
     position: fixed;
     margin-left: px;
     top: 62px;
@@ -118,9 +122,9 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
 
 .card {
 	
-    width: calc(25% - 8px);
-    margin: 4px;
-	margin-top: 6px;
+    width: calc(25% - 2px);
+    margin: 1px;
+	margin-top: 2px;
     float: left;
     opacity: 1;
     transition: 0.5s;
@@ -132,15 +136,15 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
     transition:1s;
 }
 .card:hover {
-    scale:105%;
+    scale:100%;
 	transition:0.3s;
 
 
 }
 
 .cardlarge {
-	 width: calc(100% - 8px);
-    margin:4px;
+	 width: calc(100% - 2px);
+    margin:1px;
 	margin-bottom:0px;
     float: left;
     opacity: 1;
@@ -155,24 +159,24 @@ lista {
     top: 50px;
     float: left;
     margin-top: 0px;
-    margin-left: 6px;
-	margin-right: 6px;
+    margin-left: 9px;
+	margin-right: 10px;
 	margin-bottom: 4px;
-	width: calc(100% - 12px);}
+	width: calc(100% - 18px);}
     
 @media (min-width: 1281px) and (max-width: 1440px){
       .card {
-		  width: calc(33.33333% - 8px);}
+		  width: calc(33.33333% - 2px);}
 	}
 
 @media (min-width: 769px) and (max-width: 1280px){
 	.card {
-		width: calc(50% - 8px);}
+		width: calc(50% - 2px);}
 }
 
 @media (max-width: 768px){
 	.card {
-		width:calc(100% - 8px);}
+		width:calc(100% - 2px);}
 }
 
 

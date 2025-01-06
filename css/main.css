@@ -5,6 +5,12 @@
 @import url("../webfonts/Montserrat_VariableFont_wght/stylesheet.css");
 @import url("../webfonts/LexendDeca_Medium/stylesheet.css");
 @import url("../webfonts/LexendDeca_Regular/stylesheet.css");
+@import url("OpenSans_Condensed_Light/stylesheet.css");
+@import url("OpenSans_Medium/stylesheet.css");
+@import url("OpenSans_Light/stylesheet.css");
+
+
+
 
 
 #menu_checkbox {
@@ -13,33 +19,37 @@
 
 label {
     position: absolute;
-    top: 50px;
-    right: 0;
-    left: calc(100% - 40px);
+    top: 71px;
     display: block;
-    width: 60px;
-    height: 60px;
-    margin: -30px auto 0 auto;
-    cursor: pointer;
+    width: 100%;
+    height: 44px;
+    margin-top: -51px;
+    margin-right: auto;
+    margin-bottom: 0;
     float: right;
+    right: 16px;
 }
 
-
+#menuwide{
+    position: absolute;
+    right: 47%;
+    top: -70px;
+	opacity:0;
+}
 
 body header {
-	width: calc(100% - 20px);
-	height: 50px;
-	background-color: #F0F0F0;
-	position: fixed;
-	margin-left: 0px;
-	border-top: 10px solid #000000;
-	border-left: 10px solid #000000;
-	border-right: 10px solid #000000;
-	z-index: 3;
-	opacity: 1;
-	text-shadow: 0px 0px 0px;
-	top: 0px;
-	border-bottom: 2px solid #000000;
+    backdrop-filter: blur(20px);
+    width: calc(100% - 19px);
+    height: 50px;
+    position: fixed;
+    margin-left: 0px;
+    border-top: 10px solid #000000;
+    z-index: 3;
+    opacity: 1;
+    text-shadow: 0px 0px 0px;
+    top: 0px;
+    border-bottom: 0px solid #000000;
+    left: 10px;
 }
 body p {
     height: 1100px;
@@ -47,24 +57,23 @@ body p {
     border-top-width: 10px;
 }
 label div {
-  position: relative;
-  width:20px;
-  top: 0;
-  height: 3px;
-  background-color: black;
-  margin-bottom: 5px;
-  transition: 0.1s ease transform, 0.5s ease top, 0.5s ease width,
+    position: relative;
+    width: 20px;
+    top: 0;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: 0.1s ease transform, 0.5s ease top, 0.5s ease width,
     0.5s ease right;
- 
+    float: right;
+    clear: right;
 }
 
 
-#menu_checkbox:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);}
-#menu_checkbox:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);}
-#menu_checkbox:checked + label dive:nth-child(3) {display: block ;transition: 0.4s;}
-#menu_checkbox:checked + label dive:nth-child(4) {display: block;transition: 0.4s;}
-#menu_checkbox:checked + label dive:nth-child(5) {display: block ;transition: 0.4s;}
-
+#menu_checkbox:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;}
+#menu_checkbox:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;}
+#menu_checkbox:checked + label div2:nth-child(3) {opacity:1;transform: translateY(50px);transition: 0.8s;}
+#menu_checkbox:not(:checked) + label div2:nth-child(3) {opacity:0;transform: translateY(-50px);transition: 0.4s;}
 label dive:hover:nth-child(3) {opacity: 1;}
 label dive:hover:nth-child(4) {opacity: 1;}
 label dive:hover:nth-child(5) {opacity: 1;}
@@ -74,6 +83,7 @@ label dive:hover:nth-child(4) .meniglavni{margin-right:40px;transition: 0.1s;}
 label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
 
 .meniglavni {
+	
 	opacity: 1;
     color: #FFFFFF;
     text-align: right;
@@ -88,13 +98,12 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
 .logo {
     height: 50px;
     width: auto;
-    opacity: 0.87;
-    background-color: #F44236;
-    border-right: 2px solid #000000;
+       
+   
 }
 
 .padajucii{
-    
+	visibility: hidden;
     width: calc(100% - 40px);
     height: 100px;
     background-color: #404040;
@@ -107,17 +116,26 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
     opacity: 0.8;
     -webkit-box-shadow: 0 0px 0 0 #393CC1;
     box-shadow: 0 0px 0 0 #393CC1;
-  
-    
-    
      line-height: 32px;
-   
-    
-    vertical-align: 0;
-   transition: 0.5s;
+      vertical-align: 0;
+    transition: 0.5s;
 	z-index: -2
 }
-
+.meniglavni2 {
+    color: #FFFFFF;
+    text-align: left;
+    float: right;
+    font-family: "OpenSans Light";
+    top: 20px;
+    font-weight: 100;
+}
+#homeid {
+    right: calc(50% + 88px);
+    position: absolute;}
+#workid {right:calc(50% + 0px);
+	position: absolute;}
+#contactid {right:calc(50% - 100px);
+	position: absolute;}
 
 .card {
     width: 100%;
@@ -159,10 +177,7 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
     height: 150px;
     display: block;
     top: 45%;
-   
-    position: fixed;
-  
-   
+    position: fixed;  
     border-radius: 25px;
     left: 27%;
 	overflow: hidden
@@ -174,8 +189,7 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
 .slika:hover {
     scale: 104%;
     transition: 0.4s;
-   
-}
+   }
 
 .cardlarge {
 	 width: calc(100% - 2px);

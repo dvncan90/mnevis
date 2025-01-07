@@ -4,6 +4,8 @@
 @import url("OpenSans_Medium/stylesheet.css");
 @import url("OpenSans_Light/stylesheet.css");
 
+
+
 .ModalBackground {
 	backdrop-filter: blur(4px);
     display:none;
@@ -29,6 +31,15 @@
 
 .Text {
     color: #505050;
+    font-family: "OpenSans Medium";
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 40px;
+}
+.TextOnBlack {
+    color: #DEDEDE;
     font-family: "OpenSans Medium";
     text-align: justify;
     margin-top: 15px;
@@ -213,7 +224,26 @@ label div {
     opacity: 1;
     transition: 0.5s;
 }
-
+.home {
+    
+    height:100vh;
+    position: relative;
+    clear: right;
+    display: block;
+    width: calc(100% - 20px);
+    float: left;
+    margin-top: 60px;
+	margin-left: 10px;}
+.contact {
+    position: relative;
+	height:100vh;
+    clear: right;
+    display: block;
+    width: calc(100% - 20px);
+    float: left;
+    margin-top: 100px;
+    margin-left: 10px;
+}
 lista {
     -webkit-column-count: 3;
     -webkit-column-gap: 0px;
@@ -222,18 +252,20 @@ lista {
     column-count: 3;
     column-gap: 2px;
     overflow: hidden;
-    height: auto;
     position: relative;
-    top: 2200px;
     float: left;
     margin-top: 0px;
-    margin-left: 9px;
+    margin-left: 8px;
     margin-right: 10px;
     margin-bottom: 4px;
     width: calc(100% - 18px);
     padding-top: 55px;
-}
+    display: block;
     
+}
+.socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;}
+
+
 @media (min-width: 1281px) and (max-width: 1440px){
     lista {
 	      column-count: 3;}

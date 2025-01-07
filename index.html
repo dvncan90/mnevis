@@ -28,11 +28,9 @@ body {
 }
 body {
     background-color: #000000;
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
     font-weight: 100;
     font-size: small;
+    display: block;
 }
 </style>
 <meta charset="utf-8">
@@ -45,11 +43,13 @@ body {
 <lista class="lista">
  									  												  
 	<div class="card">
-	<img  class="slika" src="img/Thumbnail/CityscapeCam001.jpg" ONCLICK="document.getElementById('Modal').style.display='block'"/></div>
+	<img  class="slika" src="img/Fullimg/CityscapeCam001.jpg" ONCLICK="document.getElementById('Modal').style.display='block'"/></div>
 	<div id="Modal" class="ModalBackground">
 		<div class="ModalContent">
 				<span class="Close" ONCLICK="document.getElementById('Modal').style.display='none'">X</span>
-				<img src="img/Thumbnail/CityscapeCam001.jpg"/>						   
+				<img class="ModalBackgroundImage" src="img/Thumbnail/CityscapeCam001.jpg"/>
+				<div class="Text"><b>City Scape </b>								 
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>																		 
 		</div>
 	</div>
 			
@@ -82,9 +82,8 @@ body {
 															
 															
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
- 
-
-
+&nbsp;&lt;b&gt;City Scapepe Cam 001&lt;/b&gt;
+																						
 <!--///////////////////////GLAVNI MENI//////////////////////// -->				  
 <header>
 <input type="checkbox" id="menu_checkbox">

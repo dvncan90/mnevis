@@ -1,130 +1,246 @@
-e<!doctype html>
-<html>
-<head>
-<title>Mnevis</title>
-<meta name="description" content="Welcome to Carolina Mobility Sales, LLC we are Carolina&#039;s largest Wheelchair Accessible Van Dealer. We have new and used accessible vans, full sized and mini vans. Some people call these vehicle Handicap or Handicapped vans, we prefer Accessible Vans. We also offer scooter and wheelchair lifts, adaptive driving controls. We also offer Wheelchair Accessible vans for Rentals. " />
-<meta name="keywords" content="Wheelchair Accessible Minivans, Handicap Vans, Handicapped Vans, Full size handicap Vans, New and Used, Wheelchair Lifts, Scooter Lifts, Ramps, Driving Equipment. North Carolina, NC, South Carolina, SC, Charlotte, Columbia, Greenville, Spartanburg, Handicap Vehicle Specialists, Mobility Needs, wheelchair van, wheel chair van, accessible van, wheelchair lifts, wheelchair carriers, wheelchair ramp, Adapted van, adapted vehicle, handicap van, handicapped van, minivans, conversion minivans, disabled driving, accessible transportation, scooter lift, scooter ramp, scooter carrier, hand controls, disabled, disability, disabilities, mobility, disabled transportation, new vans, used vans, Braun, Braun low floors, tie down, remote entry, ramp, kneel suspension, fold out, in floor, power door, ezlock, EMC, NMEDA, QAP, rampvan, handicap vans, Rentals" />
+@charset "utf-8";
 
-<meta name="viewport" content="width=device-width, initial-scale=1>
+@import url("OpenSans_Condensed_Light/stylesheet.css");
+@import url("OpenSans_Medium/stylesheet.css");
+@import url("OpenSans_Light/stylesheet.css");
 
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="css/Dugme.css"></script>
-<style type="text/css">
-
-	
-	
-	
-	
-	
-	
-body {
-    background-color: black;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+.ModalBackground {
+	backdrop-filter: blur(4px);
+    display:noe;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
 }
-body {
-    background-color: #000000;
-    font-weight: 100;
-    font-size: small;
+.ModalContent {
+    background-color: #EAEAEA;
+   
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-right:0px;
+    padding-left: 0px;
+    padding-top: 12px;
+}
+
+.Text {
+    color: #505050;
+    font-family: "OpenSans Medium";
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 40px;
+}
+.ModalBackgroundImage {
+    width: 100%;
+    max-height: auto;
     display: block;
+ 
+    border-bottom: 40px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
 }
-</style>
-<meta charset="utf-8">
-</head>
-					 
-					 
-<!--////////////////////// GALERIJA///////////////////////// -->	
-				
-					 
-<lista class="lista">
- 									  												  
-	<div class="card">
-	<img  class="slika" src="img/Fullimg/CityscapeCam001.jpg" ONCLICK="document.getElementById('Modal').style.display='block'"/></div>
-	<div id="Modal" class="ModalBackground">
-		<div class="ModalContent">
-				<span class="Close" ONCLICK="document.getElementById('Modal').style.display='none'">X</span>
-				<img class="ModalBackgroundImage" src="img/Thumbnail/CityscapeCam001.jpg"/>
-				<div class="Text"><b>City Scape </b>								 
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>																		 
-		</div>
-	</div>
-			
-															
-															
-    <div class="card">
-	<img  class="slika" src="img/Thumbnail/CityscapeCam002.jpg"  /></div>
-	 <div class="card">
-    <img class="slika" src="img/Thumbnail/PoolSceneCam001.jpg"  /></div>
-	<div class="card">
-    <img class="slika" src="img/Thumbnail/PoolSceneCam002.jpg"  /></div>
-	<div class="card">
-    <img class="slika" src="img/Thumbnail/d.jpg"  /></div>
-	<div class="card">
-    <img  class="slika" src="img/Thumbnail/GalleryCam001.jpg"  /></div>
-	
-	<div class="card">
-    <img  class="slika" src="img/Thumbnail/KikaKitchenCam001.jpg"  /></div>
-	<div class="card">
-    <img  class="slika" src="img/Thumbnail/MantuaCam002.jpg"  /></div>
-	
-	<div class="card">
-    <img class="slika" src="img/Thumbnail/NewYorkCam001.jpg"  /></div>
-	
-</lista>
-															
-															
-															
-<!--/////////////////////////////////////////////// -->
-															
-															
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-&nbsp;&lt;b&gt;City Scapepe Cam 001&lt;/b&gt;
-																						
-<!--///////////////////////GLAVNI MENI//////////////////////// -->				  
-<header>
-<input type="checkbox" id="menu_checkbox">
-<label for="menu_checkbox">
-  <div id="crta1"></div>
-  <div id="crta2">&nbsp;</div>
-			  
-				  
-<div2 id="menuwide">
-<div3><home id="homeid" class="meniglavni2" >Home</home></div3>
-<div3><home id="workid" class="meniglavni2">Work</home></div3>
-<div3><home id="contactid" class="meniglavni2">Contact</home></div3>									 
-</div2>									 
-						
-</label>											  
-	<!--										  
-<input type="checkbox" id="menu_checkbox">
-<label for="menu_checkbox">
-  <div class="crte" id="crta1"></div>
-  <div class="crte" id="crta2"></div>
-	
-				 
-				 
-	<dive class="padajucii"><home class="meniglavni">HOME</home></dive>
-	<dive class="padajucii"  style="top:162px"><home  class="meniglavni">WORK</home></dive>
-	<dive class="padajucii"  style="top:262px"> <home  class="meniglavni">CONTACT</home></dive>
-	
-	
-	
-		
-</label>
-																		 -->
-	<img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/>
 
-	</header>
+.Close {
+    color: grey;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 6px;
+    margin-right: 11px;
+    padding-top: 0px;
+    margin-top: -4px;
+}
 
-		
-																   
-																   
-																   
-																					  
-																					  
-																					  
-</body>
+.Close:hover {
+    color: #c8c8c8;
+    cursor: pointer;
+}
+
+
+#menu_checkbox {
+    display: none;
+}
+
+label {
+    position: absolute;
+    top: 71px;
+    display: block;
+    width: 30px;
+    height: 20px;
+    margin-top: -51px;
+    margin-right: auto;
+    margin-bottom: 0;
+    float: right;
+    right: 16px;
+}
+
+#menuwide{
+    position: absolute;
+    right: 150px;
+    top: -75px;
+	opacity:0;
+}
+
+body header {
+    backdrop-filter: blur(20px);
+    width: calc(100% - 19px);
+    height: 50px;
+    position: fixed;
+    margin-left: 0px;
+    border-top: 10px solid #000000;
+    
+    opacity: 1;
+    text-shadow: 0px 0px 0px;
+    top: 0px;
+    border-bottom: 0px solid #000000;
+    left: 10px;
+}
+body p {
+    height: 1100px;
+    border-top-style: solid;
+    border-top-width: 10px;
+}
+label div {
+    position: relative;
+    width: 20px;
+    top: 0;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: 0.1s ease transform, 0.5s ease top, 0.5s ease width,
+    0.5s ease right;
+    float: right;
+    clear: right;
+}
+#menu_checkbox{cursor:pointer}
+
+.crte {cursor: pointer;
+	opacity:1;}
+.crte:hover {opacity:0.8;}
+
+
+
+#menu_checkbox:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;opacity:1}
+#menu_checkbox:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;opacity:1}
+#menu_checkbox:checked + label div2:nth-child(3) {opacity:1;transform: translateY(50px);transition: 0.8s;}
+#menu_checkbox:not(:checked) + label div2:nth-child(3) {opacity:0;transform: translateY(-50px);transition: 0.4s;}
+
+.meniglavni {
+	
+	opacity: 1;
+    color: #FFFFFF;
+    text-align: right;
+    float: right;
+    line-height: 100px;
+    font-size: 24pt;
+    font-family: "MPLUS1p Bold";
+    margin-right: 30px;
+	transition: 0.3s;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+       
+   
+}
+
+
+.meniglavni2 {
+    color: #FFFFFF;
+    float: right;
+    font-family: "OpenSans Light";
+    top: 20px;
+    font-weight: 100;
+    text-align: center;
+	opacity: 1;
+		cursor: pointer;
+}
+
+.meniglavni2:hover {
+    font-family: "OpenSans light";
+	text-align: center;
+	opacity: 0.7
+}
+#homeid {
+    right: calc(50% + 88px);
+    position: absolute;}
+#workid {right:calc(50% + 0px);
+	position: absolute;}
+#contactid {right:calc(50% - 100px);
+	position: absolute;}
+
+.card {
+    width: 100%;
+    margin: 2px;
+    opacity: 1;
+    transition: 0.5s;
+    padding-right: 0px;
+    padding-left: 0px;
+    clear: none;
+    overflow: hidden;
+    border-width: 0px;
+    
+}
+.slika {
+	 width: 100%;
+	height:auto
+}
+
+.slika:hover {cursor: pointer;
+    opacity:0.5;
+    transition:1s;
+}
+.slika:hover {
+    scale: 104%;
+    transition: 0.4s;
+    width: calc(100%-50px);
+   }
+
+.cardlarge {
+	 width: calc(100% - 2px);
+    margin:1px;
+	margin-bottom:0px;
+    float: left;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+lista {
+	 -webkit-column-count: 3;    
+    -webkit-column-gap: 0px;    
+    -moz-column-count: 5;
+    -moz-column-gap: 2px;
+     column-count: 3;    
+     column-gap: 2px; 
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    top: 40px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 9px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    width: calc(100% - 18px);
+}
+    
+@media (min-width: 1281px) and (max-width: 1440px){
+    lista {
+	      column-count: 3;}
+}
+
+@media (min-width: 769px) and (max-width: 1280px){
+	lista {
+	      column-count: 2;}
+}
+@media (max-width: 768px){
+	lista {
+	      column-count: 1;}
+	}

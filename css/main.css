@@ -40,8 +40,8 @@
     width: 100%;
     max-height: auto;
     display: block;
-    text-shadow: 3px 3px 3px #000000;
-    border-bottom: 39px solid #FFFFFF;
+ 
+    border-bottom: 40px solid #FFFFFF;
     border-top: 1px solid #FFFFFF;
 }
 
@@ -51,8 +51,10 @@
     font-size: 20px;
     font-weight: bold;
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding-bottom: 15px;
-    margin-right: 22px;
+    padding-bottom: 6px;
+    margin-right: 11px;
+    padding-top: 0px;
+    margin-top: -4px;
 }
 
 .Close:hover {
@@ -151,6 +153,7 @@ label div {
 
 
 .meniglavni2 {
+	
     color: #FFFFFF;
     float: right;
     font-family: "OpenSans Light";
@@ -158,7 +161,8 @@ label div {
     font-weight: 100;
     text-align: center;
 	opacity: 1;
-		cursor: pointer;
+	cursor: pointer;
+	text-decoration: none
 }
 
 .meniglavni2:hover {
@@ -211,22 +215,23 @@ label div {
 }
 
 lista {
-	 -webkit-column-count: 3;    
-    -webkit-column-gap: 0px;    
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0px;
     -moz-column-count: 5;
     -moz-column-gap: 2px;
-     column-count: 3;    
-     column-gap: 2px; 
+    column-count: 3;
+    column-gap: 2px;
     overflow: hidden;
     height: auto;
     position: relative;
-    top: 40px;
+    top: 2200px;
     float: left;
     margin-top: 0px;
     margin-left: 9px;
     margin-right: 10px;
     margin-bottom: 4px;
     width: calc(100% - 18px);
+    padding-top: 55px;
 }
     
 @media (min-width: 1281px) and (max-width: 1440px){
@@ -241,4 +246,8 @@ lista {
 @media (max-width: 768px){
 	lista {
 	      column-count: 1;}
-	}
+	
+    menuwide {display:none}
+	
+	
+}

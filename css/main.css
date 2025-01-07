@@ -236,7 +236,7 @@ label div {
 	margin-left: 10px;}
 .contact {
     position: relative;
-	height:100vh;
+	height:100vh-60px;
     clear: right;
     display: block;
     width: calc(100% - 20px);

@@ -1,16 +1,41 @@
 @charset "utf-8";
-@import url("../webfonts/MPLUS1p_Bold/stylesheet.css");
-@import url("../webfonts/MPLUS1p_Regular/stylesheet.css");
-@import url("../webfonts/Arvo_Bold/stylesheet.css");
-@import url("../webfonts/Montserrat_VariableFont_wght/stylesheet.css");
-@import url("../webfonts/LexendDeca_Medium/stylesheet.css");
-@import url("../webfonts/LexendDeca_Regular/stylesheet.css");
+
 @import url("OpenSans_Condensed_Light/stylesheet.css");
 @import url("OpenSans_Medium/stylesheet.css");
 @import url("OpenSans_Light/stylesheet.css");
 
+.ModalBackground {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.ModalContent {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 50%;
+}
 
+.Close {
+    color: grey;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
 
+.Close:hover {
+    color: black;
+    cursor: pointer;
+}
 
 
 #menu_checkbox {
@@ -21,8 +46,8 @@ label {
     position: absolute;
     top: 71px;
     display: block;
-    width: 100%;
-    height: 44px;
+    width: 30px;
+    height: 20px;
     margin-top: -51px;
     margin-right: auto;
     margin-bottom: 0;
@@ -32,8 +57,8 @@ label {
 
 #menuwide{
     position: absolute;
-    right: 47%;
-    top: -70px;
+    right: 150px;
+    top: -75px;
 	opacity:0;
 }
 
@@ -68,19 +93,18 @@ label div {
     float: right;
     clear: right;
 }
+#menu_checkbox{cursor:pointer}
+
+.crte {cursor: pointer;
+	opacity:1;}
+.crte:hover {opacity:0.8;}
 
 
-#menu_checkbox:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;}
-#menu_checkbox:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;}
+
+#menu_checkbox:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;opacity:1}
+#menu_checkbox:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;opacity:1}
 #menu_checkbox:checked + label div2:nth-child(3) {opacity:1;transform: translateY(50px);transition: 0.8s;}
 #menu_checkbox:not(:checked) + label div2:nth-child(3) {opacity:0;transform: translateY(-50px);transition: 0.4s;}
-label dive:hover:nth-child(3) {opacity: 1;}
-label dive:hover:nth-child(4) {opacity: 1;}
-label dive:hover:nth-child(5) {opacity: 1;}
-
-label dive:hover:nth-child(3) .meniglavni{margin-right:40px;transition: 0.1s;}
-label dive:hover:nth-child(4) .meniglavni{margin-right:40px;transition: 0.1s;}
-label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
 
 .meniglavni {
 	
@@ -102,32 +126,22 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
    
 }
 
-.padajucii{
-	visibility: hidden;
-    width: calc(100% - 40px);
-    height: 100px;
-    background-color: #404040;
-    position: fixed;
-    margin-left: px;
-    top: 62px;
-    display: none;
-    left: 20px;
-    float: none;
-    opacity: 0.8;
-    -webkit-box-shadow: 0 0px 0 0 #393CC1;
-    box-shadow: 0 0px 0 0 #393CC1;
-     line-height: 32px;
-      vertical-align: 0;
-    transition: 0.5s;
-	z-index: -2
-}
+
 .meniglavni2 {
     color: #FFFFFF;
-    text-align: left;
     float: right;
     font-family: "OpenSans Light";
     top: 20px;
     font-weight: 100;
+    text-align: center;
+	opacity: 1;
+		cursor: pointer;
+}
+
+.meniglavni2:hover {
+    font-family: "OpenSans light";
+	text-align: center;
+	opacity: 0.7
 }
 #homeid {
     right: calc(50% + 88px);
@@ -153,35 +167,7 @@ label dive:hover:nth-child(5) .meniglavni{margin-right:40px;transition: 0.1s;}
 	 width: 100%;
 	height:auto
 }
-.popup {
-    backdrop-filter: blur(20px);
-   
-    width: 1000px;
-    height: 500px;
-    display: block;
-    top: 30%;
-    
-    
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-    font-size: large;
-    color: #FFFFFF;
-    text-align: center;
-    text-indent: -7px;
-    
-    left: 27%;
-	
-}
-.popupcontainer {
-   
-    width: 500px;
-    height: 150px;
-    display: block;
-    top: 45%;
-    position: fixed;  
-    border-radius: 25px;
-    left: 27%;
-	overflow: hidden
-}
+
 .slika:hover {cursor: pointer;
     opacity:0.5;
     transition:1s;

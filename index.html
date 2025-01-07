@@ -45,7 +45,16 @@ body {
 <lista class="lista">
  									  												  
 	<div class="card">
-	<img  class="slika" src="img/Thumbnail/CityscapeCam001.jpg"  /></div>
+	<img  class="slika" src="img/Thumbnail/CityscapeCam001.jpg" ONCLICK="document.getElementById('Modal').style.display='block'"/></div>
+	<div id="Modal" class="ModalBackground">
+		<div class="ModalContent">
+				<span class="Close" ONCLICK="document.getElementById('Modal').style.display='none'">X</span>
+				<img src="img/Thumbnail/CityscapeCam001.jpg"/>						   
+		</div>
+	</div>
+			
+															
+															
     <div class="card">
 	<img  class="slika" src="img/Thumbnail/CityscapeCam002.jpg"  /></div>
 	 <div class="card">
@@ -94,8 +103,8 @@ body {
 	<!--										  
 <input type="checkbox" id="menu_checkbox">
 <label for="menu_checkbox">
-  <div id="crta1"></div>
-  <div id="crta2"></div>
+  <div class="crte" id="crta1"></div>
+  <div class="crte" id="crta2"></div>
 	
 				 
 				 
@@ -111,4 +120,12 @@ body {
 	<img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/>
 
 	</header>
+
+		
+																   
+																   
+																   
+																					  
+																					  
+																					  
 </body>

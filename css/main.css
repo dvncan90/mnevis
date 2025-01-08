@@ -90,6 +90,7 @@ body p {
 
 
 .Close {
+	position:fixed;
     color: grey;
     float: right;
     font-size: 20px;

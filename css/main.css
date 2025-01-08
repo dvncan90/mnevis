@@ -6,6 +6,39 @@
 
 
 
+
+/* HEADER */
+
+
+body header {
+    backdrop-filter: blur(20px);
+    width: calc(100% - 19px);
+    height: 50px;
+    position: fixed;
+    margin-left: 0px;
+    border-top: 10px solid #000000;
+        opacity: 1;
+    text-shadow: 0px 0px 0px;
+    top: 0px;
+    border-bottom: 0px solid #000000;
+    left: 10px;
+}
+body p {
+    height: 1100px;
+    border-top-style: solid;
+    border-top-width: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;}
+
+
+
+
+/* Galerija Privju Slika */
+
+
 .ModalBackground {
 	backdrop-filter: blur(4px);
     display:none;
@@ -28,7 +61,14 @@
     padding-left: 0px;
     padding-top: 12px;
 }
-
+.ModalBackgroundImage {
+    width: 100%;
+    max-height: auto;
+    display: block;
+ 
+    border-bottom: 40px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+}
 .Text {
     color: #505050;
     font-family: "OpenSans Medium";
@@ -47,14 +87,7 @@
     margin-right: 50px;
     padding-bottom: 40px;
 }
-.ModalBackgroundImage {
-    width: 100%;
-    max-height: auto;
-    display: block;
- 
-    border-bottom: 40px solid #FFFFFF;
-    border-top: 1px solid #FFFFFF;
-}
+
 
 .Close {
     color: grey;
@@ -72,6 +105,12 @@
     color: #c8c8c8;
     cursor: pointer;
 }
+
+
+
+
+
+/* Meni i Dugme */
 
 
 #menu_checkbox {
@@ -98,25 +137,7 @@ label {
 	opacity:0;
 }
 
-body header {
-    backdrop-filter: blur(20px);
-    width: calc(100% - 19px);
-    height: 50px;
-    position: fixed;
-    margin-left: 0px;
-    border-top: 10px solid #000000;
-    
-    opacity: 1;
-    text-shadow: 0px 0px 0px;
-    top: 0px;
-    border-bottom: 0px solid #000000;
-    left: 10px;
-}
-body p {
-    height: 1100px;
-    border-top-style: solid;
-    border-top-width: 10px;
-}
+
 label div {
     position: relative;
     width: 20px;
@@ -154,15 +175,6 @@ label div {
     margin-right: 30px;
 	transition: 0.3s;
 }
-
-.logo {
-    height: 50px;
-    width: auto;
-       
-   
-}
-
-
 .meniglavni2 {
 	
     color: #FFFFFF;
@@ -188,6 +200,13 @@ label div {
 	position: absolute;}
 #contactid {right:calc(50% - 100px);
 	position: absolute;}
+
+
+
+
+
+/* Galerija */
+
 
 .card {
     width: 100%;
@@ -224,6 +243,10 @@ label div {
     opacity: 1;
     transition: 0.5s;
 }
+
+
+/* Glavne Sekcije Stranice */
+
 .home {
     
     height:100vh;
@@ -244,7 +267,10 @@ label div {
     margin-top: 100px;
     margin-left: 10px;
 }
-lista {
+
+.socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;} /* Ikonice za drustvene mreze */
+
+lista {      /* Work */
     -webkit-column-count: 3;
     -webkit-column-gap: 0px;
     -moz-column-count: 5;
@@ -263,7 +289,7 @@ lista {
     display: block;
     
 }
-.socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;}
+
 
 
 @media (min-width: 1281px) and (max-width: 1440px){

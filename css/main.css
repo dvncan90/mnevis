@@ -11,12 +11,14 @@
 
 
 html {
-  height: 100vh;
+  height:auto;
 }
 
-.animacija {
+.animacijaa {
+  width: 100%;
+  position: relative;
   height: 500vh;
-  background: #000;
+  background: #25456;
 }
 
 canvas {

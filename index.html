@@ -1,30 +1,32 @@
 e<!doctype html>
 <html>
 <head>
-	
 <title>Mnevis</title>
 <meta name="description" content="Welcome to Carolina Mobility Sales, LLC we are Carolina&#039;s largest Wheelchair Accessible Van Dealer. We have new and used accessible vans, full sized and mini vans. Some people call these vehicle Handicap or Handicapped vans, we prefer Accessible Vans. We also offer scooter and wheelchair lifts, adaptive driving controls. We also offer Wheelchair Accessible vans for Rentals. " />
 <meta name="keywords" content="Wheelchair Accessible Minivans, Handicap Vans, Handicapped Vans, Full size handicap Vans, New and Used, Wheelchair Lifts, Scooter Lifts, Ramps, Driving Equipment. North Carolina, NC, South Carolina, SC, Charlotte, Columbia, Greenville, Spartanburg, Handicap Vehicle Specialists, Mobility Needs, wheelchair van, wheel chair van, accessible van, wheelchair lifts, wheelchair carriers, wheelchair ramp, Adapted van, adapted vehicle, handicap van, handicapped van, minivans, conversion minivans, disabled driving, accessible transportation, scooter lift, scooter ramp, scooter carrier, hand controls, disabled, disability, disabilities, mobility, disabled transportation, new vans, used vans, Braun, Braun low floors, tie down, remote entry, ramp, kneel suspension, fold out, in floor, power door, ezlock, EMC, NMEDA, QAP, rampvan, handicap vans, Rentals" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1>
+
 <meta charset="utf-8">
 <title>Untitled Document</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="css/Dugme.css"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js">
+<style type="text/css">
+
 	
-
-
-
-<style>
-html {
-  height: 100vh;
-}
-
 body {
-  height: 500vh;
-  background: #000;
-}	
+    background-color: black;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+body {
+    background-color: #000000;
+    font-weight: 100;
+    font-size: small;
+    display: block;
+}
 </style>
 <meta charset="utf-8">
 </head>
@@ -35,59 +37,103 @@ body {
 <!--////////////////////// HOME STRANICA ///////////////////////// -->	
 
 	
-	
-<canvas id="hero-lightpass" />
-	
-<script>const html = document.documentElement;
-const canvas = document.getElementById("hero-lightpass");
+<div id="home" class="home"><a class="text"></a>	
+
+<div id="main">
+  <div id="main2">
+    <div id="page2">
+      <canvas></canvas>
+    </div>
+  </div>
+</div>
+
+</div>	
+
+<script>
+	gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.defaults({
+  markers: true,
+});
+const canvas = document.querySelector("#page2>canvas");
 const context = canvas.getContext("2d");
 
-const frameCount = 148;
-const currentFrame = index => (
-  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
-)
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-const preloadImages = () => {
-  for (let i = 1; i < frameCount; i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-  }
-};
-
-const img = new Image()
-img.src = currentFrame(1);
-canvas.width=1158;
-canvas.height=770;
-img.onload=function(){
-  context.drawImage(img, 0, 0);
-}
-
-const updateImage = index => {
-  img.src = currentFrame(index);
-  context.drawImage(img, 0, 0);
-}
-
-window.addEventListener('scroll', () => {  
-  const scrollTop = html.scrollTop;
-  const maxScrollTop = html.scrollHeight - window.innerHeight;
-  const scrollFraction = scrollTop / maxScrollTop;
-  const frameIndex = Math.min(
-    frameCount - 1,
-    Math.ceil(scrollFraction * frameCount)
-  );
-  
-  requestAnimationFrame(() => updateImage(frameIndex + 1))
+window.addEventListener("resize", function () {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  render();
 });
 
-preloadImages()
-	</script>
+const frameCount = 241;
+const currentFrame = (index) =>
+  `https://kozarkar.github.io/heart-animation/image_${(index + 1)
+    .toString()
+    .padStart(4, "0")}.webp`;
 
+const images = [];
+const sequence = {
+  frame: 0
+};
 
+for (let i = 0; i < frameCount; i++) {
+  const img = new Image();
+  img.src = currentFrame(i);
+  images.push(img);
+}
 
+gsap.to(sequence, {
+  frame: frameCount - 1,
+  snap: "frame",
+  ease: "none",
+  scrollTrigger: {
+    scrub: 0.01,
+    start: `10% top`,
+    end: `1200% top`,
+    trigger: "#page2",
+  },
+  onUpdate: render
+});
+
+images[0].onload = render;
+
+function render() {
+  scaleImage(images[sequence.frame], context);
+}
+
+function scaleImage(img, ctx) {
+  var canvas = ctx.canvas;
+  var hRatio = canvas.width / img.width;
+  var vRatio = canvas.height / img.height;
+  var ratio = Math.max(hRatio, vRatio);
+  var centerShift_x = (canvas.width - img.width * ratio) / 2;
+  var centerShift_y = (canvas.height - img.height * ratio) / 2;
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.drawImage(
+    images[sequence.frame],
+    0,
+    0,
+    img.width,
+    img.height,
+    centerShift_x,
+    centerShift_y,
+    img.width * ratio,
+    img.height * ratio
+  );
+}
+
+ScrollTrigger.create({
+  trigger: "#main",
+  pin: true,
+  start: `top top`,
+  end: `1200% 100%`
+});
+</script>
 
 	
 					 
-<!--////////////////////// GALERIJA///////////////////////// 	
+<!--////////////////////// GALERIJA///////////////////////// -->	
 				
 									
 <lista id="lista" class="lista">
@@ -127,7 +173,7 @@ preloadImages()
 
 
 	
-<!--////////////////////// CONTACT STRANICA ///////////////////////// 
+<!--////////////////////// CONTACT STRANICA ///////////////////////// -->
 
 	
 <div id="contact" class="contact"><a class="TextOnBlack" style="top: 50%; text-align: center; margin: auto; width: calc(100% - 50px); position: relative; display: block;">For any questions or to request a quotation, please reach out through this email:</a>
@@ -142,8 +188,6 @@ preloadImages()
 																	
 																	
 																	</div>												
-															
-									-->						
 															
 															
 														

@@ -14,7 +14,7 @@ html {
   height: 100vh;
 }
 
-body {
+.animacija {
   height: 500vh;
   background: #000;
 }

@@ -138,17 +138,17 @@ preloadImages()
 
 <script>
 const square = document.querySelector('.slika');
-slika.classList.remove('slika-transition');
+.slika.classList.remove('.slika-transition');
 
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      slika.classList.add('slika-transition');
+      .slika.classList.add('.slika-transition');
       return;
     }
 
-    slika.classList.remove('slika-transition');
+    .slika.classList.remove('.slika-transition');
   });
 });
 

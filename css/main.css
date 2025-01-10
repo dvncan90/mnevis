@@ -146,6 +146,11 @@ body p {
 
 #menu_checkbox {
     display: none;
+    cursor:pointer;
+}
+#menu_checkbox_mobil {
+    display: none;
+    cursor:pointer;
 }
 
 label {
@@ -168,6 +173,7 @@ label {
 	opacity:0;
 }
 #menumobil{
+	position:fixed;
 	width: 100vw;
 	height: 100vh;
 	background-color: coral;
@@ -184,7 +190,7 @@ label div {
     float: right;
     clear: right;
 }
-#menu_checkbox{cursor:pointer}
+
 
 .crte {cursor: pointer;
 	opacity:1;}

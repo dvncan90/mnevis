@@ -358,3 +358,7 @@ lista {      /* Work */
 	
 	
 }
+  @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+#buttonpc {display:none;}
+  }   

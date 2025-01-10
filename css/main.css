@@ -173,12 +173,13 @@ label {
 	opacity:0;
 }
 #menumobil{
-  top:60px;
+
+  top:500px;
   left:0;
-  display:block;
 	position:fixed;
 	width: 100vw;
 	height: 100vh;
+  backround-color:coral;
 
   backdrop-filter: blur(20px);
 
@@ -207,10 +208,7 @@ label div {
 #menu_checkbox:checked + label div2:nth-child(3) {opacity:1;transform: translateY(50px);transition: 0.8s;}
 #menu_checkbox:not(:checked) + label div2:nth-child(3) {opacity:0;transform: translateY(-50px);transition: 0.4s;}
 
-#menu_checkbox_mobil:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;opacity:1}
-#menu_checkbox_mobil:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;opacity:1}
-#menu_checkbox_mobil:checked + label div2:nth-child(3) {opacity:1;transform: translateY(50px);transition: 0.8s;}
-#menu_checkbox_mobil:not(:checked) + label div2:nth-child(3) {opacity:0;transform: translateY(-50px);transition: 0.4s;}
+
 
 
 .meniglavni2 {
@@ -369,14 +367,3 @@ lista {      /* Work */
 
   
   
-  @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-    #buttonpc {display:none;}
-    #buttonmobil {display:block}
-  }
-     
-  
-  @media only screen and (min-width: 769px) {
-  /* For mobile phones: */
-    #buttonpc {display:block;}
-  #buttonmobil {display:none}}

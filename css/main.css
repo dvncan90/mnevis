@@ -156,7 +156,12 @@ label {
     float: right;
     right: 16px;
 }
-
+#buttonmobil {
+  display:none;
+}
+#buttonpc {
+  display:block;
+}
 #menupc{
     position: absolute;
     right: 150px;
@@ -370,3 +375,12 @@ lista {      /* Work */
 }@media screen and (max-width: 860px){
   
   #buttonpc{display:none;}}
+  #buttonmobil{display:block;}}
+	
+
+  
+}@media screen and (min-width: 861 px max-width: 5000px){
+  
+  #buttonpc{display:block;}}
+  #buttonmobil{display:none;}}
+	

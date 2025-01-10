@@ -371,10 +371,12 @@ lista {      /* Work */
   
   @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-    #buttonpc {display:none;}}
+    #buttonpc {display:none;}
+    #buttonmobil {display:block}
+  }
      
   
   @media only screen and (min-width: 769px) {
   /* For mobile phones: */
-    #buttonpc {display:block;}}
-    
+    #buttonpc {display:block;}
+  #buttonmobil {display:none}}

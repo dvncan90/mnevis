@@ -355,26 +355,26 @@ lista {      /* Work */
 
 @media (min-width: 1281px) and (max-width: 1440px){
     lista {
-	      column-count: 3;}
+      column-count: 3;}}
 
 
 @media (min-width: 769px) and (max-width: 1280px){
 	lista {
-	      column-count: 2;}
+    column-count: 2;}}
 
 
 @media (max-width: 768px){
 	lista {
-	      column-count: 1;}
+    column-count: 1;}}
 
   
   
   @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-#buttonpc {display:none;}
+    #buttonpc {display:none;}}
      
   
   @media only screen and (min-width: 769px) {
   /* For mobile phones: */
-#buttonpc {display:block;}
+    #buttonpc {display:block;}}
     

@@ -136,19 +136,19 @@ preloadImages()
 	
 </lista>
 
-<script>// Remove the transition class
+<script>
 const square = document.querySelector('.slika');
-square.classList.remove('slika-transition');
+slika.classList.remove('slika-transition');
 
-// Create the observer, same as before:
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      square.classList.add('slika-transition');
+      slika.classList.add('slika-transition');
       return;
     }
 
-    square.classList.remove('slika-transition');
+    slika.classList.remove('slika-transition');
   });
 });
 

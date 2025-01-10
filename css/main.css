@@ -11,19 +11,6 @@
 
 
 html {
-	scroll-behavior: smooth;@charset "utf-8";
-
-@import url("OpenSans_Condensed_Light/stylesheet.css");
-@import url("OpenSans_Medium/stylesheet.css");
-@import url("OpenSans_Light/stylesheet.css");
-
-
-
-
-/* HOME ANIMACIJA */
-
-
-html {
 	scroll-behavior: smooth;
   height:auto;
 }
@@ -186,13 +173,14 @@ label {
 	opacity:0;
 }
 #menumobil{
+  top:60px;
   left:0;
   display:block;
 	position:fixed;
 	width: 100vw;
 	height: 100vh;
-	background-color: black;
-  
+
+  backdrop-filter: blur(20px);
 
 label div {
     position: relative;
@@ -244,7 +232,9 @@ label div {
 	opacity: 0.7
 }
   
-  .meniglavnimobil {color: #FFFFFF;
+  .meniglavnimobil {
+    
+    color: #FFFFFF;
     position:relative;
     float: right;
     font-family: "OpenSans Light";
@@ -377,7 +367,7 @@ lista {      /* Work */
 	lista {
 	      column-count: 1;}
 	
-    menuwide {display:none}
+ 
 	
 	
 }
@@ -385,357 +375,8 @@ lista {      /* Work */
   /* For mobile phones: */
 #buttonpc {display:none;}
   }   
-  height:auto;
-}
-
-.animacijaa {
-  display: block;
-  top: 0px;
-  width: 100vw;
-  position: relative;
-  height: 900vh;
-  background: #25456;
-}
-
-canvas {
-	object-fit: contain;
-	
-  position: sticky;
-left: 0%;
-  top: 0%;
- transform: translate(0%, -30%);
-  width:100vw;
-	height:1200px
   
-  
-}
-
-/* HEADER */
-
-
-body header {
-    backdrop-filter: blur(20px);
-    width: calc(100% - 19px);
-    height: 50px;
-    position: fixed;
-    margin-left: 0px;
-    border-top: 10px solid #000000;
-        opacity: 1;
-    text-shadow: 0px 0px 0px;
-    top: 0px;
-    border-bottom: 0px solid #000000;
-    left: 10px;
-}
-body p {
-    height: 1100px;
-    border-top-style: solid;
-    border-top-width: 10px;
-}
-
-.logo {
-    height: 50px;
-    width: auto;}
-
-
-
-
-/* Galerija Privju Slika */
-
-
-.ModalBackground {
-	backdrop-filter: blur(4px);
-    display:none;
-    z-index: 1;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-}
-.ModalContent {
-    background-color: #EAEAEA;
-   
-    width: 80%;
-    height: auto;
-    margin: auto;
-    padding-right:0px;
-    padding-left: 0px;
-    padding-top: 12px;
-}
-.ModalBackgroundImage {
-    width: 100%;
-    max-height: auto;
-    display: block;
- 
-    border-bottom: 40px solid #FFFFFF;
-    border-top: 1px solid #FFFFFF;
-}
-.Text {
-    color: #505050;
-    font-family: "OpenSans Medium";
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 40px;
-}
-.TextOnBlack {
-    color: #DEDEDE;
-    font-family: "OpenSans Medium";
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 40px;
-}
-
-
-.Close {
-	position:fixed;
-    color: grey;
-    float: right;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding-bottom: 6px;
-    margin-right: 11px;
-    padding-top: 0px;
-    margin-top: -4px;
-}
-
-.Close:hover {
-    color: #c8c8c8;
-    cursor: pointer;
-}
-
-
-
-
-
-/* Meni i Dugme */
-
-
-#menu_checkbox {
-    display: none;
-    cursor:pointer;
-}
-#menu_checkbox_mobil {
-    display: none;
-    cursor:pointer;
-}
-
-label {
-    position: absolute;
-    top: 71px;
-    display: block;
-    width: 30px;
-    height: 20px;
-    margin-top: -51px;
-    margin-right: auto;
-    margin-bottom: 0;
-    float: right;
-    right: 16px;
-}
-
-#menuwide{
-    position: absolute;
-    right: 150px;
-    top: -75px;
-	opacity:0;
-}
-#menumobil{
-	position:fixed;
-	width: 100vw;
-	height: 100vh;
-	background-color: coral;
-
-label div {
-    position: relative;
-    width: 20px;
-    top: 0;
-    height: 3px;
-    background-color: white;
-    margin-bottom: 5px;
-    transition: 0.1s ease transform, 0.5s ease top, 0.5s ease width,
-    0.5s ease right;
-    float: right;
-    clear: right;
-}
-
-
-.crte {cursor: pointer;
-	opacity:1;}
-.crte:hover {opacity:0.8;}
-
-
-
-#menu_checkbox:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;opacity:1}
-#menu_checkbox:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;opacity:1}
-#menu_checkbox:checked + label div2:nth-child(3) {opacity:1;transform: translateY(50px);transition: 0.8s;}
-#menu_checkbox:not(:checked) + label div2:nth-child(3) {opacity:0;transform: translateY(-50px);transition: 0.4s;}
-
-#menu_checkbox_mobil:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;opacity:1}
-#menu_checkbox_mobil:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;opacity:1}
-#menu_checkbox_mobil:checked + label div2:nth-child(3) {opacity:1;transform: translateY(50px);transition: 0.8s;}
-#menu_checkbox_mobil:not(:checked) + label div2:nth-child(3) {opacity:0;transform: translateY(-50px);transition: 0.4s;}
-
-
-.meniglavni2 {
-	
-    color: #FFFFFF;
-    float: right;
-    font-family: "OpenSans Light";
-    top: 20px;
-    font-weight: 100;
-    text-align: center;
-	opacity: 1;
-	cursor: pointer;
-	text-decoration: none
-}
-
-.meniglavni2:hover {
-        font-family: "OpenSans light";
-	text-align: center;
-	opacity: 0.7
-}
-#homeid {
-    right: calc(50% + 88px);
-    position: absolute;}
-#workid {right:calc(50% + 0px);
-	position: absolute;}
-#contactid {right:calc(50% - 100px);
-	position: absolute;}
-
-
-
-
-
-/* Galerija */
-
-
-.card {
-    width: 100%;
-    margin: 2px;
-    opacity: 1;
-    transition: 0.5s;
-    padding-right: 0px;
-    padding-left: 0px;
-    clear: none;
-    overflow: hidden;
-    border-width: 0px;
-    
-}
-
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .slika {
-    transition: opacity 1.5s ease, transform 1.5s ease;
-  }
-}
-
-.slika-transition {
-    opacity: 1;
-    transform: none;
-}
-
-
-.slika {
-	 width: 100%;
-	height:auto;
-	 opacity: 0;
-    transform: scale(1.2);
-}
-
-.slika:hover {cursor: pointer;
-    opacity:0.5;
-    transition:1s;
-}
-.slika:hover {
-    scale: 104%;
-    transition: 0.4s;
-    width: calc(100%-50px);
-   }
-
-.cardlarge {
-	 width: calc(100% - 2px);
-    margin:1px;
-	margin-bottom:0px;
-    float: left;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-
-/* Glavne Sekcije Stranice */
-
-.home {
-    
-    height:100vh;
-    position: relative;
-    clear: right;
-    display: block;
-    width: calc(100% - 20px);
-    float: left;
-    margin-top: 60px;
-	margin-left: 10px;}
-.contact {
-    position: relative;
-	height:100vh;
-    clear: right;
-    display: block;
-    width: calc(100% - 20px);
-    float: left;
-    margin-top: 100px;
-    margin-left: 10px;
-}
-
-.socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;} /* Ikonice za drustvene mreze */
-
-lista {      /* Work */
-    -webkit-column-count: 3;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 5;
-    -moz-column-gap: 2px;
-    column-count: 3;
-    column-gap: 2px;
-    overflow: hidden;
-    position: relative;
-    float: left;
-    margin-top: 0px;
-    margin-left: 8px;
-    margin-right: 10px;
-    margin-bottom: 4px;
-    width: calc(100% - 18px);
-    padding-top: 55px;
-    display: block;
-    
-}
-
-
-
-@media (min-width: 1281px) and (max-width: 1440px){
-    lista {
-	      column-count: 3;}
-#buttonmobil {display:none;}
-}
-@media (min-width: 769px) and (max-width: 1280px){
-	lista {
-	      column-count: 2;}
-#buttonmobil {display:none;}
-	}
-@media (max-width: 768px){
-	lista {
-	      column-count: 1;}
-	
-    menuwide {display:none}
-	
-	
-}
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) {
   /* For mobile phones: */
-#buttonpc {display:none;}
+#buttonpc {display:block;}
   }   

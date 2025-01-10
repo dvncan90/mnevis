@@ -251,9 +251,34 @@ label div {
     border-width: 0px;
     
 }
+
+
+.square {
+    width: 200px;
+    height: 200px;
+    background: teal;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .square {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+
+.slika-transition {
+    opacity: 1;
+    transform: none;
+}
+
+
 .slika {
 	 width: 100%;
 	height:auto
+	 opacity: 0;
+    transform: scale(1.2);
 }
 
 .slika:hover {cursor: pointer;

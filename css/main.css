@@ -347,12 +347,13 @@ lista {      /* Work */
 @media (min-width: 1281px) and (max-width: 1440px){
     lista {
 	      column-count: 3;}
-}#buttonmobil {display:none;}
-
+#buttonmobil {display:none;}
+}
 @media (min-width: 769px) and (max-width: 1280px){
 	lista {
 	      column-count: 2;}
-}#buttonmobil {display:none;}
+#buttonmobil {display:none;}
+	}
 @media (max-width: 768px){
 	lista {
 	      column-count: 1;}

@@ -18,18 +18,22 @@ html {
 .animacijaa {
   display: block;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   position: relative;
   height: 900vh;
   background: #25456;
 }
 
 canvas {
+	object-fit: contain;
+	
   position: sticky;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 50vw;
+left: 0%;
+  top: 0%;
+ transform: translate(0%, -30%);
+  width:100vw;
+	height:1200px
+  
   
 }
 

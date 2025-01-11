@@ -105,7 +105,7 @@ preloadImages()
  <lista id="lista" class="lista">
  									  												  
 	<div class="card">
-	<img  class="slika" src="img/Fullimg/CityscapeCam001.jpg"    ONCLICK="document.getElementById('Modal').style.display='block'"/></div>
+	<img  class="slika" src="img/Fullimg/CityscapeCam001.jpg"    ONCLICK="document.getElementById('Modal').style.display='block' ; document.getElementById('close').style.display='block'"/></div>
 	<div id="Modal" class="ModalBackground">
 		<div class="ModalContent">
 				
@@ -136,7 +136,7 @@ preloadImages()
 	
 </lista>
 
-<span class="Close" ONCLICK="document.getElementById('Modal').style.display='none'"><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
+<span id="close" class="close" ONCLICK="document.getElementById('Modal').style.display='none'; document.getElementById('close').style.display='none' "><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
 
 	
 <!--////////////////////// CONTACT STRANICA ///////////////////////// -->			

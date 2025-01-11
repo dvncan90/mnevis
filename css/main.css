@@ -171,13 +171,16 @@ label {
   display:none;
   margin:auto;
   position: fixed;
-  width:80vw;
+  width:calc(100% - 10px);
   height:100vh;
     top: 60px;
- left:10vw;
+ left:0vw;
 	opacity:1;
-  backdrop-filter: brightness(60%);
+  
   backdrop-filter: blur(10px);
+  background-color: #1A2332;
+   -webkit-mask-image: -webkit-gradient(linear, left top, 
+    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.6)));
 }
 
 label div {
@@ -208,8 +211,9 @@ label div {
 
 #menu_checkbox_mobil:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;opacity:1}
 #menu_checkbox_mobil:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;opacity:1}
-#menu_checkbox_mobil:checked + label div2:nth-child(3) {display:block;}
-#menu_checkbox_mobil:not(:checked) + label div2:nth-child(3) {display:none;}
+#menu_checkbox_mobil:checked + label div2:nth-child(3) {display:block; transform: translateY(-100vh);transition: 0.4s;}
+
+#menu_checkbox_mobil:not(:checked) + label div2:nth-child(3) {display:block;translateY(100vh);transition: 0.4s;}
 
 
 .meniglavni {

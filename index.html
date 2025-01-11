@@ -32,7 +32,7 @@ body {
 
 </head>
 
-<sadrzaj id="sadrzaj">
+
 
 
 <!--////////////////////// HOME STRANICA ///////////////////////// -->	
@@ -44,7 +44,7 @@ body {
   <!-- `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`-->                                                         
                                                           
                                                           
-<div id='home' class="animacijaa">	
+<div id="home" class="animacijaa">	
 	
 <canvas id="hero-lightpass" />
 	
@@ -105,7 +105,7 @@ preloadImages()
  <lista id="lista" class="lista">
  								  												  
 	<div class="card">
-	<img  class="slika" src="img/Fullimg/CityscapeCam001.jpg"    ONCLICK="document.getElementById('Modal').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'"/></div>
+	<img  class="slika" src="https://github.com/dvncan90/mnevis/blob/910f16061425cf29b1915be3b07790b4b3c63585/img/Fullimg/CityscapeCam001.jpg?raw=true"/"    ONCLICK="document.getElementById('Modal').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'"/></div>
 	<div id="Modal" class="ModalBackground">
 		<div class="ModalContent">
 				
@@ -136,7 +136,7 @@ preloadImages()
 	
 </lista>
 
-<span id="close" class="close" ONCLICK="document.getElementById('Modal').style.display='none'; document.getElementById('close').style.display='none';document.getElementById('glavno').style.overflow='hidden' "><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
+<span id="close" class="close" ONCLICK="document.getElementById('Modal').style.display='none'; document.getElementById('close').style.display='none';document.getElementById('glavno').style.overflow='visible' "><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
 
 	
 <!--////////////////////// CONTACT STRANICA ///////////////////////// -->			
@@ -160,7 +160,7 @@ preloadImages()
 															
 														
                                                     												
-                                                    </sadrzaj>															
+                                                 											
 									
 <!--///////////////////////GLAVNI PADAJUCI MENI//////////////////////// -->	
 
@@ -185,7 +185,7 @@ preloadImages()
 
 
   
-<div onclick="prelaz()"id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil">
+<div onclick="prelaz()" id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil">
 <label for="menu_checkbox_mobil">
 <div id="crta1"></div>
 <div id="crta2">&nbsp;</div>
@@ -195,14 +195,14 @@ preloadImages()
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a></div3>	
                                                                    
-                                                                   
+                                                           
                                                                    
 <script>
 function (prelaz) {
 
-document.getElementById("sadrzaj").style.transform: "translateX(-70%)"  }  
-                                                                   
-                                                                   
+document.getElementById("lista").style.transform:'translateX(-70%)';  }  
+   </script>                                                                
+   <script>                                                                
 function izlaz() {
 
 const checkbox = document.getElementById("menu_checkbox_mobil");

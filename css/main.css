@@ -84,7 +84,7 @@ body p {
     margin: auto;
     padding-right:0px;
     padding-left: 0px;
-    padding-top: 12px;
+   
 }
 .ModalBackgroundImage {
     margin:auto;
@@ -93,7 +93,7 @@ body p {
     display: block;
     object-fit: contain;
     border-bottom: 40px solid #FFFFFF;
-    border-top: 1px solid #FFFFFF;
+   
 }
 .Text {
     color: #505050;
@@ -114,11 +114,11 @@ body p {
     padding-bottom: 40px;
 }
 
-
-.Close {
+#close {display:block;}
+.close {
   float:right;
   opacity:0.5;
-  display:block;
+ cursor: pointer;
   top:-70px;
   right:-50px;
 	position:fixed;
@@ -127,7 +127,7 @@ body p {
   
 }
 
-.Close:hover {
+.close:hover {
    opacity:0.9;
     color: #c8c8c8;
     cursor: pointer;

@@ -67,7 +67,7 @@ body p {
 
 .ModalBackground {
 	backdrop-filter: blur(4px);
-    display:none;
+    display:block;
     z-index: 1;
     position: fixed;
     left: 0;
@@ -79,7 +79,6 @@ body p {
 }
 .ModalContent {
     background-color: #EAEAEA;
-   
     width: 80%;
     height: auto;
     margin: auto;
@@ -88,10 +87,11 @@ body p {
     padding-top: 12px;
 }
 .ModalBackgroundImage {
-    width: 100%;
-    max-height: auto;
+    margin:auto;
+    max-width: 100%;
+    max-height: 100vh;
     display: block;
- 
+    object-fit: contain;
     border-bottom: 40px solid #FFFFFF;
     border-top: 1px solid #FFFFFF;
 }

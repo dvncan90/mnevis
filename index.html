@@ -32,7 +32,7 @@ body {
 
 </head>
 
-
+<sadrzaj id="sadrzaj">
 
 
 <!--////////////////////// HOME STRANICA ///////////////////////// -->	
@@ -136,7 +136,7 @@ preloadImages()
 	
 </lista>
 
-<span id="close" class="close" ONCLICK="document.getElementById('Modal').style.display='none'; document.getElementById('close').style.display='none';document.getElementById('glavno').style.overflow='visible' "><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
+<span id="close" class="close" ONCLICK="document.getElementById('Modal').style.display='none'; document.getElementById('close').style.display='none';document.getElementById('glavno').style.overflow='hidden' "><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
 
 	
 <!--////////////////////// CONTACT STRANICA ///////////////////////// -->			
@@ -159,7 +159,8 @@ preloadImages()
 															
 															
 														
-															
+                                                    												
+                                                    </sadrzaj>															
 									
 <!--///////////////////////GLAVNI PADAJUCI MENI//////////////////////// -->	
 
@@ -184,20 +185,33 @@ preloadImages()
 
 
   
-<div id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil">
+<div onclick="prelaz()"id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil">
 <label for="menu_checkbox_mobil">
 <div id="crta1"></div>
 <div id="crta2">&nbsp;</div>
-			  
+		  
 <div2 id="menumobil">
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#home">Home</a></div3>
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
-<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a></div3>	<script>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a></div3>	
+                                                                   
+                                                                   
+                                                                   
+<script>
+function (prelaz) {
+
+document.getElementById("sadrzaj").style.transform: "translateX(-70%)"  }  
+                                                                   
+                                                                   
 function izlaz() {
 
 const checkbox = document.getElementById("menu_checkbox_mobil");
 checkbox.checked = false;  }                                                             
-</script>								 
+</script>
+                                                              
+
+                                                           
+			
 </div2>									 
 						
 </label>											  
@@ -208,5 +222,4 @@ checkbox.checked = false;  }
  <img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/>
  
   </header>
-																					  
-</body>
+		</body>																				  

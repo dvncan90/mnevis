@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="glavno">
 <head>
 	
 <title>Mnevis</title>
@@ -103,9 +103,9 @@ preloadImages()
 				
 								
  <lista id="lista" class="lista">
- 									  												  
+ 								  												  
 	<div class="card">
-	<img  class="slika" src="img/Fullimg/CityscapeCam001.jpg"    ONCLICK="document.getElementById('Modal').style.display='block' ; document.getElementById('close').style.display='block'"/></div>
+	<img  class="slika" src="img/Fullimg/CityscapeCam001.jpg"    ONCLICK="document.getElementById('Modal').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'"/></div>
 	<div id="Modal" class="ModalBackground">
 		<div class="ModalContent">
 				
@@ -136,7 +136,7 @@ preloadImages()
 	
 </lista>
 
-<span id="close" class="close" ONCLICK="document.getElementById('Modal').style.display='none'; document.getElementById('close').style.display='none' "><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
+<span id="close" class="close" ONCLICK="document.getElementById('Modal').style.display='none'; document.getElementById('close').style.display='none';document.getElementById('glavno').style.overflow='visible' "><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
 
 	
 <!--////////////////////// CONTACT STRANICA ///////////////////////// -->			

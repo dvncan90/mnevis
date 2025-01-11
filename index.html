@@ -182,29 +182,36 @@ preloadImages()
 </div>	
 
 
-  <!--
+
   
- <div id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil">
+<div id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil">
 <label for="menu_checkbox_mobil">
 <div id="crta1"></div>
 <div id="crta2">&nbsp;</div>
 			  
 <div2 id="menumobil">
-<div3><a  class="meniglavnimobil" href="#home">Home</a></div3>
-<div3><a  class="meniglavnimobil" href="#lista" >Work</a></div3>
-<div3><a  class="meniglavnimobil" href="#contact">Contact</a></div3>									 
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#home">Home</a></div3>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a></div3>	<script>
+function izlaz() {
+document.getElementById("menumobil").style.display = "none";
+                                                             document.getElementById("crta1").style.top = "-4";
+                                                                                   document.getElementById("crta1").style.transform = "rotateZ(-45deg)";
+                                                                                     document.getElementById("crta2").style.top = "4";
+                                                                                   document.getElementById("crta2").style.transform = "rotateZ(45deg)";
+                                                                                                                                                                                                                                  
+}
+</script>								 
 </div2>									 
 						
 </label>											  
 </div>	
--->
+
   
   
  <img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/>
   
  
-  
-  
   
   
   

@@ -140,9 +140,8 @@ body p {
 /* Meni i Dugme */
 
 
-#menu_checkbox {
-    display: none;
-}
+#menu_checkbox {display: none;}
+#menu_checkbox {display: none;}
 
 label {
     position: absolute;
@@ -192,7 +191,7 @@ label div {
     float: right;
     clear: right;
 }
-#menu_checkbox{cursor:pointer}
+
 
 .crte {cursor: pointer;
 	opacity:1;}

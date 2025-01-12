@@ -46,7 +46,7 @@ body header {
     opacity: 1;
     text-shadow: 0px 0px 0px;
     top: 0px;
-    border-bottom: 0px solid #343434;
+    border-bottom: 1px solid #343434;
    
 }
 body p {
@@ -263,7 +263,7 @@ label div {
 
 .card {
     width: 100%;
-    margin: 2px;
+    margin: auto;
     opacity: 1;
     transition: 0.5s;
     padding-right: 0px;
@@ -306,19 +306,19 @@ label div {
     position: relative;
     clear: right;
     display: block;
-    width: calc(100% - 20px);
+    width: 100%;
     float: left;
     margin-top: 60px;
-	margin-left: 10px;}
+}
 .contact {
     position: relative;
 	height:100vh;
     clear: right;
     display: block;
-    width: calc(100% - 20px);
+    width: 100%;
     float: left;
     margin-top: 100px;
-    margin-left: 10px;
+   ;
 }
 
 .socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;} /* Ikonice za drustvene mreze */
@@ -334,10 +334,10 @@ lista {      /* Work */
     position: relative;
     float: left;
     margin-top: 0px;
-    margin-left: 8px;
-    margin-right: 10px;
+  
+ 
     margin-bottom: 4px;
-    width: calc(100% - 18px);
+    width: 100%;
     padding-top: 55px;
     display: block;
     

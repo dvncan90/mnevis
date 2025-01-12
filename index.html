@@ -157,8 +157,8 @@ preloadImages()
 		
 									
 <!--///////////////////////GLAVNI PADAJUCI MENI//////////////////////// -->	
-<meni2 class="menumobilpozadinatamno"></meni2> 	
-<meni class="menumobilpozadina"></meni> 
+<meni2 id="menumobil" class="menumobilpozadinatamno"></meni2> 	
+<meni id="menumobil2" class="menumobilpozadina"></meni> 
 
 <header>
                                                     
@@ -180,7 +180,7 @@ preloadImages()
 
 
   
-<div onclick="prelaz()" id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil">
+<div  id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil" onclick="javascript:otvaranje_menija()">
 <label for="menu_checkbox_mobil">
 <div id="crta1"></div>
 <div id="crta2">&nbsp;</div>
@@ -190,25 +190,25 @@ preloadImages()
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a></div3>	
                                                                    
-                                                      
-                                                                   
-<script>
-function (prelaz) {
-
-document.getElementById("lista").style.transform:'translateX(-70%)';  }  
-   </script>                                                                
-   <script>                                                                
+                                                     
+                                                         
+<script>                                                                
 function izlaz() {
 
 const checkbox = document.getElementById("menu_checkbox_mobil");
-checkbox.checked = false;  }                                                             
-</script>
-                                                              
+checkbox.checked = false;  }  
 
-                                                           
-			
+function otvaranje_menija(){
+var menu_checkbox_mobil = document.getElementById("menu_checkbox_mobil")   
+if(menu_checkbox_mobil.checked) {
+document.getElementById("menumobil").style.cssText = "display: block; transform: translate(-50%, 0); " ; document.getElementById("menumobil2").style.cssText = "display: block; transform: translate(-50%, 0);"  }  
+ 
+else 
+{document.getElementById("menumobil").style.cssText = " transform: translate(50%, 0%)" ; document.getElementById("menumobil2").style.cssText = " transform: translate(50%, 0%)"  }  }
+</script>
+
 </div2>									 
-						
+					
 </label>											  
 </div>	
 

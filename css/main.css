@@ -368,6 +368,9 @@ lista {      /* Work */
 	      column-count: 1;}
   #buttonmobil {display:block}
 #buttonpc{display:none}
+	.ModalContent {
+    background-color: #EAEAEA;
+    width: 100%;
 }
 
 	

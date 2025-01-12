@@ -157,8 +157,12 @@ preloadImages()
 		
 									
 <!--///////////////////////GLAVNI PADAJUCI MENI//////////////////////// -->	
-<meni2 id="menumobil" class="menumobilpozadinatamno"></meni2> 	
-<meni id="menumobil2" class="menumobilpozadina"></meni> 
+	
+<meni id="menumobil2" class="menumobilpozadina">
+  <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#home">Home</a></div3>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a>
+</meni> 
 
 <header>
                                                     
@@ -185,26 +189,30 @@ preloadImages()
 <div id="crta1"></div>
 <div id="crta2">&nbsp;</div>
 		  
-  <div id="menumobil"></div>
-<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#home">Home</a></div3>
-<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
-<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a></div3>	
-                                                                   
-                                                     
+  
+</div3>	
+                                                             
+                                                
                                                          
 <script>                                                                
-function izlaz() {
-
-const checkbox = document.getElementById("menu_checkbox_mobil");
-checkbox.checked = false;  }  
+ 
 
 function otvaranje_menija(){
 var menu_checkbox_mobil = document.getElementById("menu_checkbox_mobil")   
 if(menu_checkbox_mobil.checked) {
-document.getElementById("menumobil").style.cssText = "display: block; transform: translate(-50%, 0); " ; document.getElementById("menumobil2").style.cssText = "display: block; transform: translate(-50%, 0);"  }  
+document.getElementById("menumobil2").style.cssText = "display: block; transform: translate(-100%, 0)  "  }  
  
 else 
-{document.getElementById("menumobil").style.cssText = " transform: translate(50%, 0%)" ; document.getElementById("menumobil2").style.cssText = " transform: translate(50%, 0%)"  }  }
+{document.getElementById("menumobil2").style.cssText = " transform: translate(100%, 0%)  "  }  }
+  
+function izlaz() {
+
+const checkbox = document.getElementById("menu_checkbox_mobil");
+checkbox.checked = false;  
+document.getElementById("menumobil2").style.cssText = " transform: translate(100%, 0%)  "} 
+
+  
+  
 </script>
 
 </div2>									 
@@ -212,7 +220,7 @@ else
 </label>											  
 </div>	
 
-  
+
   
  <img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/>
 

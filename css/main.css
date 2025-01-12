@@ -174,14 +174,35 @@ label {
   margin:auto;
   position: fixed;
   width:40%;
-  height:100vh;
-   top: 50px;
- 	opacity:0.5;
-   backdrop-filter: blur(10px);
- background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.9));to(rgba(0,0,0,0)));
+  height:50vh;
+  top: 50px;
+  
+
+}
+.menumobilpozadina {
+  backdrop-filter: blur(80px);
+  position:fixed;
+  width:100%;
+  height:50%;
+  margin:auto;
+  display:block;
+  top:60px;
+  
 }
 
+.menumobilpozadinatamno {
+  
+  position:fixed;
+  width:100%;
+  height:50%;
+  margin:auto;
+  display:block;
+  top:60px;
+background-color:#000000;
+opacity:0.5;}
+
 label div {
+  border: 1px solid black;
     position: relative;
     width: 20px;
     top: 0;
@@ -235,7 +256,7 @@ label div {
   font-family: "OpenSans Light";
   top: 50px;
   font-weight: 200;
-  text-align: right;
+  text-align: center;
 	opacity: 1;
 	cursor: pointer;
 	text-decoration: none;

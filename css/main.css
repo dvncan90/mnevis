@@ -10,6 +10,17 @@
 /* HOME ANIMACIJA */
 
 
+
+.naslovna {
+	display:block;
+	position: fixed;
+	width:100%;
+	height:auto;
+	margin:auto;
+}
+	
+
+
 html {
 	scroll-behavior: smooth;
   height:auto;

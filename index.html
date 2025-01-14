@@ -105,7 +105,10 @@ preloadImages()
 					 
 <!--////////////////////// GALERIJA///////////////////////// 	-->		
 				
-								
+
+                                                       
+                                                       
+                                                       
  <lista id="lista" class="lista">
  								  												  
 <div class="card">
@@ -198,7 +201,21 @@ preloadImages()
 	document.getElementById('close').style.display='none'; 
 	document.getElementById('glavno').style.overflow='visible' " ><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
 
-	
+<script>
+ const startAnimation = (entries, observer) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle(".slide-in-from-right", entry.isIntersecting);
+  });
+};
+
+const observer = new IntersectionObserver(startAnimation);
+const options = { root: null, rootMargin: '0px', threshold: 1 }; 
+
+const elements = document.querySelectorAll(".card");
+elements.forEach(el => {
+  observer.observe(el, options);
+});
+</sript>	
 <!--////////////////////// CONTACT STRANICA ///////////////////////// -->			
 
 	

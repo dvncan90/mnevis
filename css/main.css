@@ -309,13 +309,17 @@ transition:0.2s;}
     width: calc(100%-50px);
    }
 
-.cardlarge {
-	 width: calc(100% - 2px);
-    margin:1px;
-	margin-bottom:0px;
-    float: left;
-    opacity: 1;
-    transition: 0.5s;
+.slide-in-from-right {
+  animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 

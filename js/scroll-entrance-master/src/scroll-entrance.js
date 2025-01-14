@@ -7,7 +7,7 @@
       //Set up defaults
       entrance.duration = "1500";
       entrance.distance = "500";
-      entrance.heightOffset = 500;
+      entrance.heightOffset = 0;
 
       entrance.isElemInView = function(elem) {
 

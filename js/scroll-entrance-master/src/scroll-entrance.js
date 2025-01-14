@@ -5,7 +5,7 @@
       entrance = {};
 
       //Set up defaults
-      entrance.duration = "1000";
+      entrance.duration = "1500";
       entrance.distance = "200";
       entrance.heightOffset = 200;
 

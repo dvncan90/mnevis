@@ -13,13 +13,13 @@
 	display:block;
 	position:relative;
 	width:100vw;
-	height:500vh;
+	height:300vh;
 	
   }
 .homelogo{
   display:block;
   position:fixed;
-  z-index:2;
+  z-index:0;
   margin:auto;
   width:30vw;
   max-width:500px;
@@ -33,7 +33,7 @@
 	position:fixed;
 	width:100%;
 	height:100%;
-   z-index:1;
+   z-index:-2;
   object-fit: cover;
   
 }

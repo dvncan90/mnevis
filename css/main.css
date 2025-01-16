@@ -1,409 +1,305 @@
-@charset "utf-8";
+<!doctype html>
+<html >
+<head>
 
-@import url("OpenSans_Condensed_Light/stylesheet.css");
-@import url("OpenSans_Medium/stylesheet.css");
-@import url("OpenSans_Light/stylesheet.css");
+<title>Mnevis</title>
+<meta name="description" content="Welcome to Carolina Mobility Sales, LLC we are Carolina&#039;s largest Wheelchair Accessible Van Dealer. We have new and used accessible vans, full sized and mini vans. Some people call these vehicle Handicap or Handicapped vans, we prefer Accessible Vans. We also offer scooter and wheelchair lifts, adaptive driving controls. We also offer Wheelchair Accessible vans for Rentals. " />
+<meta name="keywords" content="Wheelchair Accessible Minivans, Handicap Vans, Handicapped Vans, Full size handicap Vans, New and Used, Wheelchair Lifts, Scooter Lifts, Ramps, Driving Equipment. North Carolina, NC, South Carolina, SC, Charlotte, Columbia, Greenville, Spartanburg, Handicap Vehicle Specialists, Mobility Needs, wheelchair van, wheel chair van, accessible van, wheelchair lifts, wheelchair carriers, wheelchair ramp, Adapted van, adapted vehicle, handicap van, handicapped van, minivans, conversion minivans, disabled driving, accessible transportation, scooter lift, scooter ramp, scooter carrier, hand controls, disabled, disability, disabilities, mobility, disabled transportation, new vans, used vans, Braun, Braun low floors, tie down, remote entry, ramp, kneel suspension, fold out, in floor, power door, ezlock, EMC, NMEDA, QAP, rampvan, handicap vans, Rentals" />
 
-
-
-
-/* HOME ANIMACIJA */
-
-.homeomot {
-	display:block;
-	position:relative;
-	width:100vw;
-	height:300vh;
-	
-  }
-.homelogo{
-  display:block;
-  position:fixed;
-  z-index:0;
-  margin:auto;
-  width:30vw;
-  max-width:500px;
-  top:50vh;
-  left:50vw;
-  transform:translate(-50%, 0)
-  
-}
-.naslovna {
-	display:block;
-	position:fixed;
-	width:100%;
-	height:100%;
-   z-index:-2;
-  object-fit: cover;
-  
-}
-	
+<meta name="viewport" content="width=device-width, initial-scale=1>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
 
 
-html {
-	scroll-behavior: smooth;
-  height:auto;
-}
-
-.animacijaa {
-  display: block;
-  top: 0px;
-  width: 100%;
-  position: relative;
-  height: 900vh;
-  background: #25456;
-}
-
-canvas {
-  position: sticky;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 50vw;
-  
-}
-
-/* HEADER */
-
-
-body header {
-    backdrop-filter: blur(20px);
-    width: 100%;
-    height: 50px;
-    position: fixed;
+<style>
+body {
+    background-color: black;
     margin-left: 0px;
-    border-top: 10px solid #1F1F1F;
-    opacity: 1;
-    text-shadow: 0px 0px 0px;
-    top: 0px;
-    border-bottom: 1px solid #343434;
-   
-}
-body p {
-    height: 1100px;
-    border-top-style: solid;
-    border-top-width: 10px;
-}
-
-.logo {
-    height: 50px;
-    width: auto;}
-
-
-
-
-/* Galerija Privju Slika */
-
-
-.ModalBackground {
-	backdrop-filter: blur(4px);
-    display:none;
-    z-index: 1;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-}
-.ModalContent {
-    background-color: #EAEAEA;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    padding-right:0px;
-    padding-left: 0px;
-   
-}
-.ModalBackgroundImage {
-    margin:auto;
-    max-width: 100%;
-    max-height: 100vh;
-    display: block;
-    object-fit: contain;
-    border-bottom: 40px solid #FFFFFF;
-   
-}
-.Text {
-    color: #505050;
-    font-family: "OpenSans Medium";
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 40px;
-}
-.TextOnBlack {
-    color: #DEDEDE;
-    font-family: "OpenSans Medium";
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 40px;
-}
-
-#close {display:none;}
-.close {
-  float:right;
-  opacity:0.5;
- cursor: pointer;
-  top:-70px;
-  right:-50px;
-	position:fixed;
-  z-index: 10;
- scale:0.2;
-  
-}
-
-.close:hover {
-   opacity:0.9;
-    color: #c8c8c8;
-    cursor: pointer;
-}
-
-
-
-
-
-/* Meni i Dugme */
-
-
-#menu_checkbox {display: none;}
-#menu_checkbox_mobil {display: none;}
-
-label {
-    position: absolute;
-    top: 71px;
-    display: block;
-    width: 30px;
-    height: 20px;
-    margin-top: -51px;
-    margin-right: auto;
-    margin-bottom: 0;
-    float: right;
-    right: 16px;
-}
-#buttonmobil {
-  display:none;
-}
-#buttonpc {
-  display:block;
-}
-#menupc{
-    position: absolute;
-    right: 150px;
-    top: -25px;
-	opacity:0;
-}
-#menumobil{  
-  display:none;
-
-}
-.menumobilpozadina {
-  right:-100%;
-  display:block;
-  backdrop-filter: blur(80px);
-  position:fixed;
-  width:100%;
-  height:80vh;
-  margin:auto;
-   transition: 0.3s;
-  top:60px;
-  
-}
-
-
-
-label div {
- 
-    position: relative;
-    width: 20px;
-    top: -500;
-    height: 3px;
-    background-color: white;
-    margin-bottom: 5px;
-    transition: 0.1s ease transform, 0.5s ease top, 0.5s ease width,
-    0.5s ease right;
-    float: right;
-    clear: right;
-}
-
-
-.crte {cursor: pointer;
-	opacity:1;}
-.crte:hover {opacity:0.8;}
-
-
-
-#menu_checkbox:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;opacity:1}
-#menu_checkbox:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;opacity:1}
-#menu_checkbox:checked + label div2:nth-child(3) {opacity:1;transform: translateY(10px);transition: 0.8s;}
-#menu_checkbox:not(:checked) + label div2:nth-child(3) {opacity:0;transform: translateY(-10px);transition: 0.4s;}
-
-
-#menu_checkbox_mobil:checked + label div:nth-child(1) { top: 4px; transform: rotateZ(45deg);transition: 0.3s;opacity:1}
-#menu_checkbox_mobil:checked + label div:nth-child(2) { top: -4px; transform: rotateZ(-45deg);transition: 0.3s;opacity:1}
-
-.meniglavni2 {
-	
-  color: #FFFFFF;
-  float: right;
-  font-family: "OpenSans Light";
-  top: 10px;
-  font-weight: 100;
-  text-align: center;
-	opacity: 1;
-	cursor: pointer;
-	text-decoration: none;
-}
-.meniglavnimobil {
-  position:relative;
-  display:block;
-  width:100%;
-  height:100px;
-  color: #FFFFFF;
-  font-size:30px;
-  font-family: "OpenSans Light";
-  top: 30%;
-  font-weight: 200;
-  text-align: center;
-	opacity: 1;
-	cursor: pointer;
-	text-decoration: none;
-  opacity:0.8;
-transition:0.2s;}
- .meniglavnimobil:hover {
-  opacity:1;}
-.meniglavni2:hover {
-    font-family: "OpenSans light";
-	text-align: center;
-	opacity: 0.7
-}
-#homeid {
-    right: calc(50% + 88px);
-    position: absolute;}
-#workid {right:calc(50% + 0px);
-	position: absolute;}
-#contactid {right:calc(50% - 100px);
-	position: absolute;}
-
-
-
-
-
-/* Galerija */
-
-
-.card {
-    width: 100%;
-    margin: auto;
-    opacity: 1;
-    transition: 0.5s;
-    padding-right: 0px;
-    padding-left: 0px;
-    clear: none;
-    overflow: hidden;
-    border-width: 0px;
-    
-}
-.slika {
-	 width: 100%;
-	height:auto
-}
-
-.slika:hover {cursor: pointer;
-    opacity:0.5;
-    transition:1s;
-}
-.slika:hover {
-    scale: 104%;
-    transition: 0.4s;
-    width: calc(100%-50px);
-   }
-
-.slide-in-from-right {
-  animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-
-/* Glavne Sekcije Stranice */
-
-.home {
-    
-    height:100vh;
-    position: relative;
-    clear: right;
-    display: block;
-    width: 100%;
-    float: left;
-    margin-top: 60px;
-}
-.contact {
-  border-top:100px solid ;
-    position: relative;
-	   height:100vh;
-     display: block;
-    width: 100%;
-    float: left;
-    
-    background-color:black;
-}
-
-.socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;} /* Ikonice za drustvene mreze */
-
-lista {      /* Work */
-    -webkit-column-count: 3;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 5;
-    -moz-column-gap: 2px;
-    column-count: 3;
-    column-gap: 2px;
-    overflow: hidden;
-    position: relative;
-    float: left;
     margin-top: 0px;
-        width: 100%;
-    padding-top: 55px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+body {
+    background-color: #000000;
+    font-weight: 100;
+    font-size: small;
     display: block;
-  background-color:black;
-    
 }
 
+	  /* Ensure elements are hidden while ScrollEntrance is loading */
+      [data-entrance] { visibility: hidden; }
+</style>
+
+</head>
 
 
-@media (min-width: 1281px) and (max-width: 1440px){
-    lista {
-	      column-count: 3;}
-      #buttonmobil {display:none}
-#buttonpc{display:block}
-}
 
-@media (min-width: 769px) and (max-width: 1280px){
-	lista {
-	      column-count: 2;}
-    #buttonmobil {display:none}
-#buttonpc{display:block}
-}
-@media (max-width: 768px){
-	lista {
-	      column-count: 1;}
-  #buttonmobil {display:block}
-#buttonpc{display:none}
-	.ModalContent {
-    background-color: #EAEAEA;
-    width: 100%;
-}
 
+<!--////////////////////// HOME STRANICA ///////////////////////// -->	
+
+<div id="home" class="homeomot">
+                             
+ <img class="naslovna" src="https://github.com/dvncan90/mnevis/blob/main/img/Cam001.jpg?raw=true"></img> 
+ <img class="homelogo" src="https://github.com/dvncan90/mnevis/blob/main/img/logo_large.png?raw=true">                                                                                                      
+                                                                                                      </img></div>
+                                                                                                     <div class="lista" style="z-index-1; height:50vh; background-color:red">
+<img class="homecaption" src="https://github.com/dvncan90/mnevis/blob/main/img/Caption.png?raw=true"></img>                                                                                                  </div>                                                                                                                              
+                                                                                                                                </html>	
 	
 	
+<!--Fajlovi u sekvenci da se nazovu 0001, 0002 -->	                                                          
+                                                          
+                                                          
+ <!--  //// LINK DO HOMEFREJM FOLDERA /////`https://raw.githubusercontent.com/dvncan90/mnevis/refs/heads/main/img/homeframes/${index.toString().padStart(4, '0')}.jpg`	
+)-->
+  <!-- `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`-->                                                         
+<!--                                                          
+                                                          
+<div id="home" class="animacijaa">	
+	
+<canvas id="hero-lightpass" />
+	
+<script>const html = document.documentElement;
+const canvas = document.getElementById("hero-lightpass");
+const context = canvas.getContext("2d");
+
+const frameCount = 350;
+const currentFrame = index => (
+
+	 `homeframes02/${index.toString().padStart(5, '0')}.jpg`
+)                                 
+ 
+
+const preloadImages = () => {
+  for (let i = 1; i < frameCount; i++) {
+    const img = new Image();
+    img.src = currentFrame(i);
+  }
+};
+
+const img = new Image()
+img.src = currentFrame(1);
+canvas.width=1158;
+canvas.height=770;
+img.onload=function(){
+  context.drawImage(img, 0, 0);
+}
+
+const updateImage = index => {
+  img.src = currentFrame(index);
+  context.drawImage(img, 0, 0);
+}
+
+window.addEventListener('scroll', () => {  
+  const scrollTop = html.scrollTop;
+  const maxScrollTop = html.scrollHeight - window.innerHeight;
+  const scrollFraction = scrollTop / maxScrollTop;
+  const frameIndex = Math.min(
+    frameCount - 1,
+    Math.ceil(scrollFraction * frameCount)
+  );
+  
+  requestAnimationFrame(() => updateImage(frameIndex + 1))
+});
+
+preloadImages()
+	</script>
+</div>	
+
+
+
+	-->
+					 
+<!--////////////////////// GALERIJA///////////////////////// 	-->		
+				
+
+                                                       
+                                                       
+                                                       
+ <lista id="lista" class="lista">
+ 								  												  
+<div class="card" data-entrance="fade">
+<img  class="slika" src="https://github.com/dvncan90/mnevis/blob/910f16061425cf29b1915be3b07790b4b3c63585/img/Fullimg/CityscapeCam001.jpg?raw=true"    ONCLICK="document.getElementById('Modal1').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'"/></div>
+<div id="Modal1" class="ModalBackground">
+<div class="ModalContent">
+				
+<img class="ModalBackgroundImage" src="https://github.com/dvncan90/mnevis/blob/910f16061425cf29b1915be3b07790b4b3c63585/img/Fullimg/CityscapeCam001.jpg?raw=true"/>				
+<div class="Text"><b>City Scape </b></div></div></div>																	 
+
+	
+														
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/CityscapeCam002.jpg" ONCLICK="document.getElementById('Modal2').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal2" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/CityscapeCam002.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+ 
+  
+  
+<div class="card" data-entrance="fade">
+<img class="slika" src="img/Thumbnail/PoolSceneCam001.jpg" ONCLICK="document.getElementById('Modal9').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal9" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/PoolSceneCam001.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+
+
+	 
+<div class="card" data-entrance="fade">
+<img class="slika" src="img/Thumbnail/PoolSceneCam002.jpg" ONCLICK="document.getElementById('Modal3').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal3" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/PoolSceneCam002.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+
+	 
+<div class="card" data-entrance="fade">
+<img class="slika" src="img/Thumbnail/d.jpg"  ONCLICK="document.getElementById('Modal4').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal4" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/d.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+
+
+	 
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/GalleryCam001.jpg"  ONCLICK="document.getElementById('Modal5').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal5" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/GalleryCam001.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+	
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/KikaKitchenCam001.jpg"   ONCLICK="document.getElementById('Modal6').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal6" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/KikaKitchenCam001.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+
+	 
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/MantuaCam002.jpg"   ONCLICK="document.getElementById('Modal7').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal7" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/MantuaCam002.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+	 
+	
+<div class="card" data-entrance="fade">
+ <img class="slika" src="img/Thumbnail/NewYorkCam001.jpg"  ONCLICK="document.getElementById('Modal8').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal8" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/NewYorkCam001.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+
+
+<div class="card" data-entrance="fade">
+ <img class="slika" src="img/Thumbnail/FieldHouseCam001.jpg"  ONCLICK="document.getElementById('Modal10').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'" /></div>
+<div id="Modal10" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/FieldHouseCam001.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 
+
+	 
+</lista>
+
+<span id="close" class="close" ONCLICK="document.getElementById('Modal1').style.display='none'; 
+	document.getElementById('Modal2').style.display='none'; 
+	document.getElementById('Modal3').style.display='none'; 
+	document.getElementById('Modal4').style.display='none'; 
+	document.getElementById('Modal5').style.display='none'; 
+	document.getElementById('Modal6').style.display='none'; 
+	document.getElementById('Modal7').style.display='none'; 
+	document.getElementById('Modal8').style.display='none'; 
+	document.getElementById('Modal9').style.display='none'; 
+	document.getElementById('Modal10').style.display='none'; 
+	document.getElementById('close').style.display='none'; 
+	document.getElementById('glavno').style.overflow='visible' " ><img src=https://github.com/dvncan90/mnevis/blob/main/img/close01.png?raw=true></span>
+
+
+<script src="js/scroll-entrance-master/src/scroll-entrance.js"></script>	
+
+
+
+<!--////////////////////// CONTACT STRANICA ///////////////////////// -->			
+
+	
+<div id="contact" class="contact" ><a class="TextOnBlack" style="top: 50%; text-align: center; margin: auto; width: calc(100% - 50px); position: relative; display: block;" data-entrance="from-down">For any questions or to request a quotation, please reach out through this email:</a>
+<a href="mailto:contact@mnevis.net" class="TextOnBlack" style="text-align: center; margin: auto; width: calc(100% - 50px); height:10px; position: relative; display: block; top: 52%;"data-entrance="from-down">contact@mnevis.net</a>
+<a class="TextOnBlack" style="top: 65%;text-align: center; margin: auto; width: calc(100% - 50px); height:10px; position: relative; display: block;" data-entrance="from-down" >Alternatively, connect with us on social media</a>
+
+<div style="text-align: center; margin: auto; width: calc(100% - 50px); position: relative; display: block; clear: left; top: 65%; height:20px;"data-entrance="from-down" >
+<a href="https://www.instagram.com/mnevis_ig/" "data-entrance="from-down" ><img  class="socials" src="img/sclmedia/instagram.png"></a>
+<img class="socials" src="img/sclmedia/facebook.png">
+<img class="socials" src="img/sclmedia/Youtube.png">
+<img class="socials" src="img/sclmedia/Linkedin.png"></div>
+																	
+																	
+																	</div>												
+		
+									
+<!--///////////////////////GLAVNI PADAJUCI MENI//////////////////////// -->	
+	
+<meni id="menumobil2" class="menumobilpozadina">
+  <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#home">Home</a></div3>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a>
+</meni> 
+
+<header>
+                                                    
+                                                    
+<div id="buttonpc"> <input type="checkbox" id="menu_checkbox">
+<label for="menu_checkbox">
+<div id="crta1"></div>
+<div id="crta2">&nbsp;</div>
+			  
+<div2 id="menupc">
+<div3><a id="homeid" class="meniglavni2" href="#home">Home</a></div3>
+<div3><a  id="workid" class="meniglavni2" href="#lista" >Work</a></div3>
+<div3><a id="contactid" class="meniglavni2" href="#contact">Contact</a></div3>									 
+</div2>									 
+						
+</label>											  
+</div>	
+
+
+
+  
+<div  id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil" onclick="javascript:otvaranje_menija()">
+<label for="menu_checkbox_mobil">
+<div id="crta1"></div>
+<div id="crta2">&nbsp;</div>
+		  
+  
+</div3>	
+                                                             
+                                                
+                                                         
+<script>                                                                
+ 
+
+function otvaranje_menija(){
+var menu_checkbox_mobil = document.getElementById("menu_checkbox_mobil")   
+if(menu_checkbox_mobil.checked) {
+document.getElementById("menumobil2").style.cssText = " transform: translate(-100%, 0)  "  }  
+ 
+else 
+{document.getElementById("menumobil2").style.cssText = " transform: translate(100%, 0%)  "  }  }
+  
+function izlaz() {
+
+const checkbox = document.getElementById("menu_checkbox_mobil");
+checkbox.checked = false;  
+document.getElementById("menumobil2").style.cssText = " transform: translate(100%, 0%)  "} 
+
+  
+  
+</script>
+
+</div2>									 
+					
+</label>											  
+</div>	
+
+
+  
+ <img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/>
+
+
+  </header>
+
+		</body>																				  

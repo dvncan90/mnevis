@@ -13,15 +13,29 @@
 	display:block;
 	position:relative;
 	width:100vw;
-	height:100vh;
-	margin:auto;}
-
+	height:500vh;
+	
+  }
+.homelogo{
+  display:block;
+  position:fixed;
+  z-index:2;
+  margin:auto;
+  width:30vw;
+  max-width:500px;
+  top:50vh;
+  left:50vw;
+  transform:translate(-50%, 0)
+  
+}
 .naslovna {
 	display:block;
-	position:relative;
+	position:fixed;
 	width:100%;
-	height:auto;
-	margin:auto;
+	height:100%;
+   z-index:1;
+  object-fit: cover;
+  
 }
 	
 
@@ -336,14 +350,14 @@ transition:0.2s;}
     margin-top: 60px;
 }
 .contact {
+  border-top:100px solid ;
     position: relative;
-	height:100vh;
-    clear: right;
-    display: block;
+	   height:100vh;
+     display: block;
     width: 100%;
     float: left;
-    margin-top: 100px;
-   ;
+    
+    background-color:black;
 }
 
 .socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;} /* Ikonice za drustvene mreze */
@@ -359,12 +373,10 @@ lista {      /* Work */
     position: relative;
     float: left;
     margin-top: 0px;
-  
- 
-    margin-bottom: 4px;
-    width: 100%;
+        width: 100%;
     padding-top: 55px;
     display: block;
+  background-color:black;
     
 }
 

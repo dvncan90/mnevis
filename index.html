@@ -42,7 +42,7 @@ body {
                            
  <img  class="naslovna" src="https://github.com/dvncan90/mnevis/blob/main/img/Cam001.jpg?raw=true"></img> 
  <img   class="homelogo" src="https://github.com/dvncan90/mnevis/blob/main/img/logo_large.png?raw=true">           </img></div>
-<div id="naslovna2" class="lista" style="z-index-1; height:50vh; background-color:red">
+<div  class="lista" style="z-index-1; height:50vh; background-color:red">
 <img  class="homecaption" src="https://raw.githubusercontent.com/dvncan90/mnevis/4bb702db3e115bb62b937e23fcb2ec3b93d1b1e7/img/archviz2.svg"></img>                                                                                                  </div>                                                                                                                              </html>	
 	
 	
@@ -50,11 +50,11 @@ body {
 					 
 <!--////////////////////// GALERIJA///////////////////////// 	-->		
 				
-
+<div id="headerglavni" style="z-index:-3"><img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/></div>
                                                        
                                                        
                                                        
- <lista id="lista" class="lista">
+ <lista id="lista" class="lista" style="z-index:-4">
  								  												  
 <div class="card" data-entrance="fade">
 <img  class="slika" src="https://github.com/dvncan90/mnevis/blob/910f16061425cf29b1915be3b07790b4b3c63585/img/Fullimg/CityscapeCam001.jpg?raw=true"    ONCLICK="document.getElementById('Modal1').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'"/></div>
@@ -175,14 +175,12 @@ body {
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a>
 </meni> 
-
-<header id="headerglavni">
-                                                    
-                                                    
-<div id="buttonpc"> <input type="checkbox" id="menu_checkbox">
-<label for="menu_checkbox">
-<div id="crta1"></div>
-<div id="crta2">&nbsp;</div>
+  
+<div style="position: fixed; width: 100%; height: 50px; margin-left: 0px;  top: 0px;">
+  <div id="buttonpc"> <input type="checkbox" id="menu_checkbox">
+  <label for="menu_checkbox">
+  <div id="crta1"></div>
+  <div id="crta2">&nbsp;</div>
 			  
 <div2 id="menupc">
 <div3><a id="homeid" class="meniglavni2" href="#home">Home</a></div3>
@@ -202,10 +200,9 @@ body {
 <div id="crta2">&nbsp;</div>
 		  
   
-</div3>	
-                                                             
-                                                
-                                                         
+  </div3>	</div>
+
+                                                      
 <script>                                                                
  
 
@@ -234,21 +231,21 @@ document.getElementById("menumobil2").style.cssText = " transform: translate(100
 
 
   
- <img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/>
+ 
 
 <script>
-  const element = document.getElementById("naslovna2");
+  const element = document.getElementById("lista");
 const rect = element.getBoundingClientRect();
 const topValue = rect.top;
 
 const header = document.getElementById("headerglavni");
 
-if (topValue > 0) {
+if (topValue < 0) {
   // Hide the header when the element goes above the viewport
   header.style.cssText = "display: none";
 } else {
   // Show the header when the element is visible in the viewport
-  header.style.cssText = "display: block";}
+  header.style.cssText = "display:";}
 </script>
 
 

@@ -57,7 +57,7 @@ body {
  <lista id="lista" class="lista" style="z-index:-4">
  								  												  
 <div class="card" data-entrance="fade">
-<img  class="slika" src="https://github.com/dvncan90/mnevis/blob/910f16061425cf29b1915be3b07790b4b3c63585/img/Fullimg/CityscapeCam001.jpg?raw=true"    ONCLICK="document.getElementById('Modal1').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'"/></div>
+<img  class="slika" src="https://github.com/dvncan90/mnevis/blob/910f16061425cf29b1915be3b07790b4b3c63585/img/Fullimg/CityscapeCam001.jpg?raw=true"    ONCLICK="document.getElementById('Modal1').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'"/></div>
 <div id="Modal1" class="ModalBackground">
 <div class="ModalContent">
 				
@@ -209,10 +209,11 @@ body {
 function otvaranje_menija(){
 var menu_checkbox_mobil = document.getElementById("menu_checkbox_mobil")   
 if(menu_checkbox_mobil.checked) {
-document.getElementById("menumobil2").style.cssText = " transform: translate(-100%, 0)  "  }  
- 
+document.getElementById("menumobil2").style.cssText = " transform: translate(-100%, 0)  "    
+document.getElementById('glavno').style.overflow="hidden";}
 else 
-{document.getElementById("menumobil2").style.cssText = " transform: translate(100%, 0%)  "  }  }
+{document.getElementById("menumobil2").style.cssText = " transform: translate(100%, 0%)  "  
+document.getElementById('glavno').style.overflow="visible"}  }
   
 function izlaz() {
 

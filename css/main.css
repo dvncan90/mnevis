@@ -13,7 +13,7 @@
 	display:block;
 	position:relative;
 	width:100vw;
-	height:95vh;
+	height:100vh;
 	
   }
 .homelogo{
@@ -154,7 +154,7 @@ body p {
   opacity:0.5;
  cursor: pointer;
   top:-70px;
-  right:-50px;
+  right:-100px;
 	position:fixed;
   z-index: 10;
  scale:0.2;

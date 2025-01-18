@@ -73,7 +73,7 @@ canvas {
     height: 50px;
     position: fixed;
     margin-left: 0px;
-    border-top: 10px solid #1F1F1F;
+    border-top: 10px solid red;
     opacity: 1;
     top: 0px;
     border-bottom: 1px solid #343434;

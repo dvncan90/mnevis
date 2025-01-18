@@ -97,7 +97,7 @@ body p {
 
 
 .ModalBackground {
-	z-index: 6;
+	
 	backdrop-filter: blur(4px);
     display:none;
     z-index: 1;
@@ -116,7 +116,7 @@ body p {
     margin: auto;
     padding-right:0px;
     padding-left: 0px;
-  z-index: 7;
+ 
    
 }
 .ModalBackgroundImage {
@@ -126,7 +126,7 @@ body p {
     display: block;
     object-fit: contain;
     border-bottom: 40px solid #FFFFFF;
-  z-index: 8;
+
    
 }
 .Text {

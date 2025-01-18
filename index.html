@@ -39,77 +39,14 @@ body {
 <!--////////////////////// HOME STRANICA ///////////////////////// -->	
 
 <div id="home" class="homeomot">
-                             
- <img class="naslovna" src="https://github.com/dvncan90/mnevis/blob/main/img/Cam001.jpg?raw=true"></img> 
- <img class="homelogo" src="https://github.com/dvncan90/mnevis/blob/main/img/logo_large.png?raw=true">                                                                                                      
-                                                                                                      </img></div>
-                                                                                                     <div class="lista" style="z-index-1; height:50vh; background-color:red">
-<img class="homecaption" src="https://raw.githubusercontent.com/dvncan90/mnevis/4bb702db3e115bb62b937e23fcb2ec3b93d1b1e7/img/archviz2.svg"></img>                                                                                                  </div>                                                                                                                              
-                                                                                                                                </html>	
+                           
+ <img  class="naslovna" src="https://github.com/dvncan90/mnevis/blob/main/img/Cam001.jpg?raw=true"></img> 
+ <img   class="homelogo" src="https://github.com/dvncan90/mnevis/blob/main/img/logo_large.png?raw=true">           </img></div>
+<div id="naslovna2" class="lista" style="z-index-1; height:50vh; background-color:red">
+<img  class="homecaption" src="https://raw.githubusercontent.com/dvncan90/mnevis/4bb702db3e115bb62b937e23fcb2ec3b93d1b1e7/img/archviz2.svg"></img>                                                                                                  </div>                                                                                                                              </html>	
 	
 	
-<!--Fajlovi u sekvenci da se nazovu 0001, 0002 -->	                                                          
-                                                          
-                                                          
- <!--  //// LINK DO HOMEFREJM FOLDERA /////`https://raw.githubusercontent.com/dvncan90/mnevis/refs/heads/main/img/homeframes/${index.toString().padStart(4, '0')}.jpg`	
-)-->
-  <!-- `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`-->                                                         
-<!--                                                          
-                                                          
-<div id="home" class="animacijaa">	
-	
-<canvas id="hero-lightpass" />
-	
-<script>const html = document.documentElement;
-const canvas = document.getElementById("hero-lightpass");
-const context = canvas.getContext("2d");
 
-const frameCount = 350;
-const currentFrame = index => (
-
-	 `homeframes02/${index.toString().padStart(5, '0')}.jpg`
-)                                 
- 
-
-const preloadImages = () => {
-  for (let i = 1; i < frameCount; i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-  }
-};
-
-const img = new Image()
-img.src = currentFrame(1);
-canvas.width=1158;
-canvas.height=770;
-img.onload=function(){
-  context.drawImage(img, 0, 0);
-}
-
-const updateImage = index => {
-  img.src = currentFrame(index);
-  context.drawImage(img, 0, 0);
-}
-
-window.addEventListener('scroll', () => {  
-  const scrollTop = html.scrollTop;
-  const maxScrollTop = html.scrollHeight - window.innerHeight;
-  const scrollFraction = scrollTop / maxScrollTop;
-  const frameIndex = Math.min(
-    frameCount - 1,
-    Math.ceil(scrollFraction * frameCount)
-  );
-  
-  requestAnimationFrame(() => updateImage(frameIndex + 1))
-});
-
-preloadImages()
-	</script>
-</div>	
-
-
-
-	-->
 					 
 <!--////////////////////// GALERIJA///////////////////////// 	-->		
 				
@@ -239,7 +176,7 @@ preloadImages()
 <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a>
 </meni> 
 
-<header>
+<header id="headerglavni">
                                                     
                                                     
 <div id="buttonpc"> <input type="checkbox" id="menu_checkbox">
@@ -298,6 +235,21 @@ document.getElementById("menumobil2").style.cssText = " transform: translate(100
 
   
  <img src="img/Mnevis Logo White.png" alt="" width="100" height="auto" class="logo"/>
+
+<script>
+  const element = document.getElementById("naslovna2");
+const rect = element.getBoundingClientRect();
+const topValue = rect.top;
+
+const header = document.getElementById("headerglavni");
+
+if (topValue > 0) {
+  // Hide the header when the element goes above the viewport
+  header.style.cssText = "display: none";
+} else {
+  // Show the header when the element is visible in the viewport
+  header.style.cssText = "display: block";}
+</script>
 
 
   </header>

@@ -154,7 +154,7 @@ body p {
   opacity:0.5;
  cursor: pointer;
   top:-70px;
-  right:0px;
+  right:-70px;
 	position:fixed;
   z-index: 10;
  scale:0.2;

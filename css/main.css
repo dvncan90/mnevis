@@ -216,8 +216,8 @@ label {
   height:80vh;
   margin:auto;
    transition: 0.3s;
-  top:60px;
-  
+  top:0px;
+  border-top: 10px solid #343434
 }
 
 
@@ -269,7 +269,7 @@ label div {
   display:block;
   width:100%;
   height:100px;
-  color: #FFFFFF;
+  color: #cdcbbf;
   font-size:30px;
   font-family: "OpenSans Light";
   top: 30%;

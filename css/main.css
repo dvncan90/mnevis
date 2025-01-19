@@ -363,7 +363,7 @@ transition:0.2s;}
     width: 100%;
     float: left;
     
-    background-color:black;
+    background-color:#0b0b0b;
 }
 
 .socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;} /* Ikonice za drustvene mreze */
@@ -382,7 +382,7 @@ lista {      /* Work */
         width: 100%;
     padding-top: 55px;
     display: block;
-  background-color:black;
+  background-color:#0b0b0b;
     
 }
 

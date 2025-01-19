@@ -88,8 +88,9 @@ body p {
 }
 
 .logo {
-    height: 50px;
-    width: auto;}
+    height: 40px;
+    width: auto;
+margin-top:5px;}
 
 
 
@@ -140,7 +141,7 @@ body p {
     padding-bottom: 40px;
 }
 .TextOnBlack {
-    color: #DEDEDE;
+    color: #cdcabe;
     font-family: "OpenSans Medium";
     text-align: justify;
     margin-top: 15px;
@@ -227,7 +228,7 @@ label div {
     width: 20px;
     top: -500;
     height: 3px;
-    background-color: white;
+    background-color: #cdcabe;
     margin-bottom: 5px;
     transition: 0.1s ease transform, 0.5s ease top, 0.5s ease width,
     0.5s ease right;

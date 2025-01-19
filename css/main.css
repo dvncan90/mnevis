@@ -38,13 +38,14 @@
   }
 
 .naslovna {
+  
   position:sticky;
 		top:0;
 	width:100vw;
 	height:100vh;
   z-index:-2;
   object-fit: cover;
-  
+  object-position: bottom;
 }
 	
 

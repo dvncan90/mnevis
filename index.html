@@ -236,18 +236,19 @@ document.getElementById("menumobil2").style.cssText = " transform: translate(100
  
 
 <script>
-  const element = document.getElementById("lista");
-const rect = element.getBoundingClientRect();
-const topValue = rect.top;
-
+const element = document.getElementById("lista");
 const header = document.getElementById("headerglavni");
 
-if (topValue < 0) {
-  // Hide the header when the element goes above the viewport
-  header.style.cssText = "display: none";
-} else {
-  // Show the header when the element is visible in the viewport
-  header.style.cssText = "display:";}
+window.addEventListener('scroll', function() {
+  const rect = element.getBoundingClientRect();
+  var topValue = rect.top;
+
+  if (topValue > 0) {
+    header.style.display = "none";
+  } else {
+    header.style.display = "block";
+  }
+});
 </script>
 
 

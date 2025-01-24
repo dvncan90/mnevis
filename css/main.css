@@ -370,10 +370,7 @@ transition:0.2s;}
 .socials {margin-top: 0px; margin-left:20px; margin-right:20px; width:23px; height:auto;} /* Ikonice za drustvene mreze */
 
 lista {      /* Work */
-    -webkit-column-count: 3;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 5;
-    -moz-column-gap: 2px;
+
     column-count: 3;
     column-gap: 2px;
     overflow: hidden;

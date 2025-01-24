@@ -402,6 +402,8 @@ lista {      /* Work */
 #buttonpc{display:block}
 }
 @media (max-width: 768px){
+	.homelogo{width:50vw;
+  max-width:1000px;}
 	.close{right:-65px;}
 	lista {
 	      column-count: 1;}

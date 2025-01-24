@@ -243,7 +243,22 @@ document.getElementById('glavno').style.overflow='visible'}
 
 
   
- 
+<script>
+    // Get the image element
+    const zoomImage = document.getElementById('homeomot');
+
+    // Add an event listener for the scroll event
+    window.addEventListener('scroll', function () {
+      // Get the scroll position
+      const scrollPosition = window.scrollY;
+
+      // Calculate the zoom factor based on scroll position
+      const zoomFactor = 1 + scrollPosition / 1000; // Adjust the division to control zoom speed
+
+      // Apply the zoom effect by setting the transform scale
+      zoomImage.style.transform = `scale(${zoomFactor})`;
+    });
+  </script> 
 
 <script>
 const element = document.getElementById("lista");

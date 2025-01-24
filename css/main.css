@@ -409,8 +409,8 @@ lista {      /* Work */
 	      column-count: 1;}
   #buttonmobil {display:block}
 #buttonpc{display:none}
-	.ModalContent {
-    background-color: #EAEAEA;
+	.ModalContent {top:calc(50vh-50%);
+    background-color: #131313;
     width: 100%;
 }
 

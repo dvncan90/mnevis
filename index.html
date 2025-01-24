@@ -1,47 +1,58 @@
 <!doctype html>
 <html id="glavno">
 <head>
-    <meta charset="utf-8">
-    <title>Mnevis</title>
-    <meta name="description" content="Visualizing Architecture, Spaces, Environments, And Products." />
-    <meta name="keywords" content="Architectural Visualization, 3D Architecture Rendering, Architectural Animation, 3D Rendering Studio, Architectural 3D Visualization, 3D Architectural Visualization Services, Visualizations for Architects, Architectural Renderings, Exterior 3D Rendering, Interior 3D Rendering, 3D Virtual Tour for Architecture, Realistic Architectural Renderings, Architectural CGI, Architectural Design Visualization, 3D Models for Architecture, Photo-realistic Renderings, Architectural Concept Visualization, Architectural Design Animation, Building Renderings, 3D Architecture Models" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="css/main.css" rel="stylesheet" type="text/css">
 
-    <style>
-        body {
-            background-color: #0b0b0b;
-            margin: 0;
-            font-weight: 100;
-            font-size: small;
-            display: block;
-        }
+<title>Mnevis</title>
+<meta name="description" content="Visualizing Architecture, Spaces, Environments, And Products." />
+<meta name="keywords" content="Architectural Visualization, 3D Architecture Rendering, Architectural Animation, 3D Rendering Studio, Architectural 3D Visualization, 3D Architectural Visualization Services, Visualizations for Architects, Architectural Renderings, Exterior 3D Rendering, Interior 3D Rendering, 3D Virtual Tour for Architecture, Realistic Architectural Renderings, Architectural CGI, Architectural Design Visualization, 3D Models for Architecture, Photo-realistic Renderings, Architectural Concept Visualization, Architectural Design Animation, Building Renderings, 3D Architecture Models" />
 
-        /* Ensure elements are hidden while ScrollEntrance is loading */
-        [data-entrance] { visibility: hidden; }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+
+<style>
+body {
+    background-color: #0b0b0b;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+body {
+    background-color: #0b0b0b;
+    font-weight: 100;
+    font-size: small;
+    display: block;
+}
+
+	  /* Ensure elements are hidden while ScrollEntrance is loading */
+      [data-entrance] { visibility: hidden; }
+</style>
+
 </head>
 
-<body>
-<!-- ////////////////////// HOME STRANICA ///////////////////////// -->	
+
+
+
+<!--////////////////////// HOME STRANICA ///////////////////////// -->	
+
 <div id="home" class="homeomot">
-    <img id="naslovnaslika" class="naslovna" src="img/Cam001.jpg" />
-    <img class="homelogo" src="img/logo_large.svg" />
-</div>
+                           
+ <img  id="naslovnaslika" class="naslovna" src="img/Cam001.jpg"></img> 
+ <img   class="homelogo" src="img/logo_large.svg">           </img></div>
+<div  class="lista" style="z-index-1; height:50vh; background-color:#131313; padding-top:45px; padding-bottom:45px;">
+<img class="homecaption"  src="img/archviz3.svg"></img>                                                                                                  </div>                                                                                                                              </html>	
+	
+	
 
-<div class="lista" style="z-index: 1; height: 50vh; background-color: #131313; padding-top: 45px; padding-bottom: 45px;">
-    <img class="homecaption" src="img/archviz3.svg" />
-</div>  
-
-<!-- ////////////////////// GALERIJA /////////////////////// -->		
-<div id="headeromot">
-    <div id="headerglavni" style="z-index: -3">
-        <img src="img/logo_large.svg" alt="" width="100" height="auto" class="logo" />
-    </div>
-</div>
-
-<div id="close" class="close" onclick="
+					 
+<!--////////////////////// GALERIJA///////////////////////// 	-->		
+				
+<div id="headeromot"><div id="headerglavni" style="z-index:-3"><img src="img/logo_large.svg" alt="" width="100" height="auto" class="logo"/></div></div>
+                                                       
+<div id="close" class="close" ONCLICK="
     document.getElementById('Modal1').style.display='none';
     document.getElementById('Modal2').style.display='none';
     document.getElementById('Modal3').style.display='none';
@@ -56,83 +67,242 @@
     document.getElementById('glavno').style.overflow='visible';
     document.getElementById('lista').style.zIndex='-4';
 ">
-    <img src="img/close01.png" alt="Close" />
-</div>  
+  <img src="img/close01.png" alt="Close">
+</div>                                                       
+                                                       
+ <lista id="lista" class="lista" style="z-index:-4">
+ 								  												  
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/CityscapeCam001.jpg"    ONCLICK="document.getElementById('Modal1').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'"/></div>
+<div id="Modal1" class="ModalBackground">
+<div class="ModalContent">
+				
+<img class="ModalBackgroundImage" src="img/Fullimg/CityscapeCam001.jpg"/>				
+ <div class="Text"><b> </b></div></div></div> 																 
 
-<lista id="lista" class="lista" style="z-index: -4">
-    <!-- Gallery Cards -->
-    <div class="card" data-entrance="fade">
-        <img class="slika" src="img/Thumbnail/CityscapeCam001.jpg" onclick="document.getElementById('Modal1').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index: 4'" />
-    </div>
-    <div id="Modal1" class="ModalBackground">
-        <div class="ModalContent">
-            <img class="ModalBackgroundImage" src="img/Fullimg/CityscapeCam001.jpg" />
-            <div class="Text"><b></b></div>
-        </div>
-    </div> 
+	
+														
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/CityscapeCam002.jpg" ONCLICK="document.getElementById('Modal2').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal2" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/CityscapeCam002.jpg"/>				
+<div class="Text"><b></b></div></div></div> 	 
+ 
+  
+  
+<div class="card" data-entrance="fade">
+<img class="slika" src="img/Thumbnail/PoolSceneCam001.jpg" ONCLICK="document.getElementById('Modal9').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal9" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/PoolSceneCam001.jpg"/>				
+<div class="Text"><b></b></div></div></div> 
 
-    <!-- Additional Gallery Cards -->
-    <div class="card" data-entrance="fade">
-        <img class="slika" src="img/Thumbnail/CityscapeCam002.jpg" onclick="document.getElementById('Modal2').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index: 4'" />
-    </div>
-    <div id="Modal2" class="ModalBackground">
-        <div class="ModalContent">
-            <img class="ModalBackgroundImage" src="img/Fullimg/CityscapeCam002.jpg" />
-            <div class="Text"><b></b></div>
-        </div>
-    </div> 
 
-    <!-- Additional Modals and Cards omitted for brevity -->
+	 
+<div class="card" data-entrance="fade">
+<img class="slika" src="img/Thumbnail/PoolSceneCam002.jpg" ONCLICK="document.getElementById('Modal3').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal3" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/PoolSceneCam002.jpg"/>				
+<div class="Text"><b></b></div></div></div>  
+
+
+	 
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/GalleryCam001.jpg"  ONCLICK="document.getElementById('Modal5').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal5" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/GalleryCam001.jpg"/>				
+<div class="Text"><b>City Scape 002 </b></div></div></div> 	 
+	
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/KikaKitchenCam001.jpg"   ONCLICK="document.getElementById('Modal6').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal6" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/KikaKitchenCam001.jpg"/>				
+<div class="Text"><b> </b></div></div></div> 	 
+
+	 
+<div class="card" data-entrance="fade">
+<img  class="slika" src="img/Thumbnail/MantuaCam002.jpg"   ONCLICK="document.getElementById('Modal7').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal7" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/MantuaCam002.jpg"/>				
+<div class="Text"><b></b></div></div></div>  	
+	 
+
+<div class="card" data-entrance="fade">
+<img  class="slika"  src="img/Thumbnail/NewYorkCam001.jpg"   ONCLICK="document.getElementById('Modal8').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal7" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/NewYorkCam001.jpg"/>				
+<div class="Text"><b></b></div></div></div>  	
+	 
+
+
+
+<div class="card" data-entrance="fade">
+<img class="slika" src="img/Thumbnail/FieldHouseCam001.jpg"  ONCLICK="document.getElementById('Modal10').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal10" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Fullimg/FieldHouseCam001.jpg"/>				
+<div class="Text"><b> </b></div></div></div> 	 
+
+
+<div class="card" data-entrance="fade">
+<img class="slika" src="img/Thumbnail/GalleryCam002.jpg"  ONCLICK="document.getElementById('Modal11').style.display='block'; document.getElementById('close').style.display='block'; document.getElementById('glavno').style.overflow='hidden'; document.getElementById('lista').style.cssText = 'z-index:4'" /></div>
+<div id="Modal11" class="ModalBackground">
+<div class="ModalContent"><img class="ModalBackgroundImage" src="img/Thumbnail/GalleryCam002.jpg"/>				
+<div class="Text"><b></b></div></div></div>  	
 
 </lista>
 
+
+
 <script src="js/scroll-entrance-master/src/scroll-entrance.js"></script>	
 
-<!-- ////////////////////// CONTACT STRANICA ///////////////////////// -->			
-<div id="contact" class="contact">
-    <a class="TextOnBlack" style="top: 40%; text-align: center; margin: auto; width: calc(100% - 50px); position: relative; display: block;">For any questions or to request a quotation, please reach out through this email:</a>
-    <a href="mailto:contact@mnevis.net" class="TextOnBlack" style="text-align: center; margin: auto; width: calc(100% - 50px); height: 10px; position: relative; display: block; top: 42%;">contact@mnevis.net</a>
-    <a class="TextOnBlack" style="top: 55%; text-align: center; margin: auto; width: calc(100% - 50px); height: 10px; position: relative; display: block;">Alternatively, connect with us on social media</a>
 
-    <div style="text-align: center; margin: auto; width: calc(100% - 50px); position: relative; display: block; clear: left; top: 55%; height: 20px;">
-        <a href="https://www.instagram.com/mnevis_ig/">
-            <img class="socials" src="img/sclmedia/instagram.png" />
-        </a>
-        <img class="socials" src="img/sclmedia/facebook.png" />
-        <img class="socials" src="img/sclmedia/Youtube.png" />
-        <img class="socials" src="img/sclmedia/Linkedin.png" />
-    </div>
 
-    <img src="https://raw.githubusercontent.com/dvncan90/mnevis/15e035a39fca7c9872d0330195b27054cb8fbde3/img/logo_red.svg" style="width: 100px; height: auto; display: block; position: relative; top: 60%; left: calc(50% - 50px)" />
-</div>
+<!--////////////////////// CONTACT STRANICA ///////////////////////// -->			
 
-<!-- ////////////////////// GLAVNI PADAJUCI MENI /////////////////////// -->	
-<meni id="menumobil2" class="menumobilpozadina">
-    <div style="width: 100%; height: 100%; background-color: black; opacity: 0.7">
-        <div3><a onclick="izlaz()" class="meniglavnimobil" href="#home">Home</a></div3>
-        <div3><a onclick="izlaz()" class="meniglavnimobil" href="#lista">Work</a></div3>
-        <div3><a onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a></div>
-    </div>
-</meni>
+	
+<div id="contact" class="contact" ><a class="TextOnBlack" style="top: 40%; text-align: center; margin: auto; width: calc(100% - 50px); position: relative; display: block;" >For any questions or to request a quotation, please reach out through this email:</a>
 
-<div style="position: fixed; width: 100%; height: 0px; margin-left: 0px; top: 10px;">
-    <div id="buttonpc">
-        <input type="checkbox" id="menu_checkbox">
-        <label for="menu_checkbox">
-            <div id="crta1"></div>
-            <div id="crta2">&nbsp;</div>
-            <div2 id="menupc">
-                <div3><a id="homeid" class="meniglavni2" href="#home">Home</a></div3>
-                <div3><a id="workid" class="meniglavni2" href="#lista">Work</a></div3>
-                <div3><a id="contactid" class="meniglavni2" href="#contact">Contact</a></div3>									 
-            </div2>									 
-        </label>
-    </div>	
-</div>
+<a href="mailto:contact@mnevis.net" class="TextOnBlack" style="text-align: center; margin: auto; width: calc(100% - 50px); height:10px; position: relative; display: block; top: 42%;">contact@mnevis.net</a>
+<a class="TextOnBlack" style="top: 55%;text-align: center; margin: auto; width: calc(100% - 50px); height:10px; position: relative; display: block;" >Alternatively, connect with us on social media</a>
 
+<div style="text-align: center; margin: auto; width: calc(100% - 50px); position: relative; display: block; clear: left; top: 55%; height:20px;" >
+<a href="https://www.instagram.com/mnevis_ig/"  ><img  class="socials" src="img/sclmedia/instagram.png"></a>
+<img class="socials" src="img/sclmedia/facebook.png">
+<img class="socials" src="img/sclmedia/Youtube.png">
+<img class="socials" src="img/sclmedia/Linkedin.png"></div>
+
+<img src="https://raw.githubusercontent.com/dvncan90/mnevis/15e035a39fca7c9872d0330195b27054cb8fbde3/img/logo_red.svg" style="width:100px; height:auto; display:block; position:relative; top: 60%; left:calc(50% - 50px) "                                                    
+																	
+																	</div>												
+		
+									
+<!--///////////////////////GLAVNI PADAJUCI MENI//////////////////////// -->	
+	
+<meni id="menumobil2" class="menumobilpozadina"><div style="width:100%; height:100%; background-color:black; opacity:0.7">
+  <div3><a  onclick="izlaz()" class="meniglavnimobil" href="#home">Home</a></div3>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#lista" >Work</a></div3>
+<div3><a  onclick="izlaz()" class="meniglavnimobil" href="#contact">Contact</a></div>
+</meni> 
+  
+<div style="position: fixed; width: 100%; height: 0px; margin-left: 0px;  top: 10px;">
+  <div id="buttonpc"> <input type="checkbox" id="menu_checkbox">
+  <label for="menu_checkbox">
+  <div id="crta1"></div>
+  <div id="crta2">&nbsp;</div>
+			  
+<div2 id="menupc">
+<div3><a id="homeid" class="meniglavni2" href="#home">Home</a></div3>
+<div3><a  id="workid" class="meniglavni2" href="#lista" >Work</a></div3>
+<div3><a id="contactid" class="meniglavni2" href="#contact">Contact</a></div3>									 
+</div2>									 
+						
+</label>											  
+</div>	
+
+
+
+  
+<div  id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil" onclick="javascript:otvaranje_menija()">
+<label for="menu_checkbox_mobil">
+<div id="crta1"></div>
+<div id="crta2">&nbsp;</div>
+		  
+  
+  </div3>	</div>
 <script>
-    // Your JavaScript code for menu opening, scroll behavior, etc.
+    
+  
+    const image = document.getElementById('naslovnaslika');
+
+    
+    window.addEventListener('scroll', () => {
+      
+      let scrollPosition = window.scrollY;
+
+     
+      let scaleFactor = 1 + scrollPosition / 5000;
+    if (scaleFactor > 1.5) scaleFactor = 1.5;
+   
+      image.style.transform = `scale(${scaleFactor})`;
+    });
+  </script>   
+                                                      
+<script>                                                                
+ 
+
+function otvaranje_menija(){
+var menu_checkbox_mobil = document.getElementById("menu_checkbox_mobil")   
+if(menu_checkbox_mobil.checked) {
+document.getElementById("menumobil2").style.cssText = " transform: translate(-100%, 0)  "    
+document.getElementById('glavno').style.overflow="hidden";}
+else 
+{document.getElementById("menumobil2").style.cssText = " transform: translate(100%, 0%)  "  
+document.getElementById('glavno').style.overflow="visible"}  }
+  
+function izlaz() {
+
+const checkbox = document.getElementById("menu_checkbox_mobil");
+checkbox.checked = false;  
+document.getElementById("menumobil2").style.cssText = " transform: translate(100%, 0%)  "
+document.getElementById('glavno').style.overflow='visible'} 
+
+  
+  
 </script>
 
-</body>
-</html>
+</div2>									 
+					
+</label>											  
+</div>	
+
+
+  
+  <script>
+    // Get the image element
+    const image = document.getElementById('homeomot');
+
+    // Function to calculate scale factor based on the scroll position
+    function getScaleFactor(scrollPosition) {
+      // Check if the screen width is small (mobile devices)
+      if (window.innerWidth <= 768) {
+        return 1 + scrollPosition / 400;  // Larger scale factor for mobile
+      } else {
+        return 1 + scrollPosition / 1000;  // Default scale factor for larger screens
+      }
+    }
+
+    // Listen to the scroll event
+    window.addEventListener('scroll', () => {
+      // Get the scroll position
+      let scrollPosition = window.scrollY;
+
+      // Get the scale factor based on the scroll position and screen size
+      let scaleFactor = getScaleFactor(scrollPosition);
+
+      // Set a max scale factor (optional)
+      if (scaleFactor > 3) scaleFactor = 3;
+
+      // Apply the scale transformation
+      image.style.transform = `scale(${scaleFactor})`;
+    });
+  </script>
+
+<script>
+const element = document.getElementById("lista");
+const header = document.getElementById("headeromot");
+
+window.addEventListener('scroll', function() {
+  const rect = element.getBoundingClientRect();
+  var topValue = rect.top;
+
+  if (topValue > 0) {
+    header.style.display = "none";
+  } else {
+    header.style.display = "block";
+  }
+});
+</script>
+
+
+  </header>
+
+		</body>																				  

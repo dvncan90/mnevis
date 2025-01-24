@@ -402,7 +402,7 @@ lista {      /* Work */
 #buttonpc{display:block}
 }
 @media (max-width: 768px){
-	.close{right:-50px;}
+	.close{right:-65px;}
 	lista {
 	      column-count: 1;}
   #buttonmobil {display:block}

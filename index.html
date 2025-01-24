@@ -40,7 +40,7 @@ body {
 
 <div id="home" class="homeomot">
                            
- <img  class="naslovna" src="img/Cam001.jpg"></img> 
+ <img  id="naslovnaslika" class="naslovna" src="img/Cam001.jpg"></img> 
  <img   class="homelogo" src="img/logo_large.svg">           </img></div>
 <div  class="lista" style="z-index-1; height:50vh; background-color:#131313; padding-top:45px; padding-bottom:45px;">
 <img class="homecaption"  src="img/archviz3.svg"></img>                                                                                                  </div>                                                                                                                              </html>	
@@ -211,7 +211,23 @@ body {
 		  
   
   </div3>	</div>
+	<script>
+    
+  
+    const image = document.getElementById('naslovnaslika');
 
+    
+    window.addEventListener('scroll', () => {
+      
+      let scrollPosition = window.scrollY;
+
+     
+      let scaleFactor = 1 + scrollPosition / 5000;
+    if (scaleFactor > 1.5) scaleFactor = 1.5;
+   
+      image.style.transform = `scale(${scaleFactor})`;
+    });
+  </script>   
                                                       
 <script>                                                                
  

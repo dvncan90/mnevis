@@ -38,6 +38,7 @@
   }
 
 .naslovna {
+	overflow:hidden;
   transition: 0.3s;
   position:sticky;
 		top:0;

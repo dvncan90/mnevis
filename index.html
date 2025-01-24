@@ -144,8 +144,8 @@ body {
       modal.style.display = 'none';
     });
     document.getElementById('close').style.display = 'none';
-    document.getElementById('glavno').style.overflowY = 'auto';
-    document.getElementById('glavno').style.overflowY = 'hidden';  
+    document.getElementById('glavno').style.overflowY = 'display';
+    document.getElementById('glavno').style.overflowX = 'hidden';  
     document.getElementById('lista').style.zIndex = -4;
   }
 </script>
@@ -283,7 +283,7 @@ document.getElementById('glavno').style.overflow='visible'}
     function getScaleFactor(scrollPosition) {
       // Check if the screen width is small (mobile devices)
       if (window.innerWidth <= 768) {
-        return 1 + scrollPosition / 400;  // Larger scale factor for mobile
+        return 1 + scrollPosition / 650;  // Larger scale factor for mobile
       } else {
         return 1 + scrollPosition / 1000;  // Default scale factor for larger screens
       }

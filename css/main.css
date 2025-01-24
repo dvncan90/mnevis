@@ -161,7 +161,7 @@ margin-top:5px;}
 	position:fixed;
   z-index: 10;
  scale:0.2;
-  
+ display:none; 
 }
 
 .close:hover {

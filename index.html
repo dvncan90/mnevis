@@ -217,7 +217,7 @@ body {
     });
 </script>   
  <script>
-	  // Select the target div
+// Select the target div
 const myDiv = document.getElementById('home');
 
 // Create an IntersectionObserver to watch the visibility of the div
@@ -225,13 +225,21 @@ const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             // Add the 'visible' class when the div is in view
-            document.getElementByClassName('label div').style.background-color='#131313';
+            document.getElementById('crta1').style.backgroundColor = '#131313';
+            document.getElementById('crta2').style.backgroundColor = '#131313';
+            document.getElementById('homeid').style.color = '#131313';
+            document.getElementById('contactid').style.color = '#131313';
+            document.getElementById('workid').style.color = '#131313';   
         } else {
             // Remove the 'visible' class when the div is out of view
-             document.getElementByClassName('label div').style.background-color='#cdc9bd';
+            document.getElementById('crta1').style.backgroundColor = '#cdc9bd';
+            document.getElementById('crta2').style.backgroundColor = '#cdc9bd';
+            document.getElementById('homeid').style.color = '#cdc9bd';
+            document.getElementById('contactid').style.color = '#cdc9bd';
+            document.getElementById('workid').style.color = '#cdc9bd';     
         }
     });
-}, { threshold: 0.5 }); // Trigger when 50% of the div is visible
+}, { threshold: 0.0 }); // Trigger when 50% of the div is visible
 
 // Start observing the div
 observer.observe(myDiv);

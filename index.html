@@ -201,27 +201,41 @@ body {
 <label for="menu_checkbox_mobil">
 <div id="crta1"></div>
 <div id="crta2">&nbsp;</div>
-		  
-  
-  </div3>	</div>
+ </div3></div>
+	
 <script>
-    
-  
     const image = document.getElementById('naslovnaslika');
-
-    
+   
     window.addEventListener('scroll', () => {
-      
-      let scrollPosition = window.scrollY;
-
      
+      let scrollPosition = window.scrollY;
+    
       let scaleFactor = 1 + scrollPosition / 5000;
     if (scaleFactor > 1.5) scaleFactor = 1.5;
    
       image.style.transform = `scale(${scaleFactor})`;
     });
-  </script>   
-                                                      
+</script>   
+ <script>
+	  // Select the target div
+const myDiv = document.getElementById('home');
+
+// Create an IntersectionObserver to watch the visibility of the div
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add the 'visible' class when the div is in view
+            document.getElementByClassName('label div').style.background-color='#131313';
+        } else {
+            // Remove the 'visible' class when the div is out of view
+             document.getElementByClassName('label div').style.background-color='#cdc9bd';
+        }
+    });
+}, { threshold: 0.5 }); // Trigger when 50% of the div is visible
+
+// Start observing the div
+observer.observe(myDiv);
+</script>
 <script>                                                                
  
 

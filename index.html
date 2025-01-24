@@ -201,8 +201,8 @@ body {
   
 <div  id="buttonmobil"> <input type="checkbox" id="menu_checkbox_mobil" onclick="javascript:otvaranje_menija()">
 <label for="menu_checkbox_mobil">
-<div id="crta1"></div>
-<div id="crta2">&nbsp;</div>
+<div id="crta1m"></div>
+<div id="crta2m">&nbsp;</div>
  </div3></div>
 	
 <script>
@@ -229,6 +229,8 @@ const observer = new IntersectionObserver((entries, observer) => {
             // Add the 'visible' class when the div is in view
             document.getElementById('crta1').style.backgroundColor = '#131313';
             document.getElementById('crta2').style.backgroundColor = '#131313';
+		document.getElementById('crta1m').style.backgroundColor = '#131313';
+            document.getElementById('crta2m').style.backgroundColor = '#131313';
             document.getElementById('homeid').style.color = '#131313';
             document.getElementById('contactid').style.color = '#131313';
             document.getElementById('workid').style.color = '#131313';   
@@ -236,6 +238,8 @@ const observer = new IntersectionObserver((entries, observer) => {
             // Remove the 'visible' class when the div is out of view
             document.getElementById('crta1').style.backgroundColor = '#cdc9bd';
             document.getElementById('crta2').style.backgroundColor = '#cdc9bd';
+		document.getElementById('crta1m').style.backgroundColor = '#cdc9bd';
+            document.getElementById('crta2m').style.backgroundColor = '#cdc9bd';
             document.getElementById('homeid').style.color = '#cdc9bd';
             document.getElementById('contactid').style.color = '#cdc9bd';
             document.getElementById('workid').style.color = '#cdc9bd';     

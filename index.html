@@ -1,5 +1,5 @@
 <!doctype html>
-<html id="glavno">
+<html id="glavno" style="overflow-x:hidden; overflow-y:auto;">
 <head>
 
 <title>Mnevis</title>
@@ -144,7 +144,8 @@ body {
       modal.style.display = 'none';
     });
     document.getElementById('close').style.display = 'none';
-    document.getElementById('glavno').style.overflow = 'visible';
+    document.getElementById('glavno').style.overflowY = 'auto';
+    document.getElementById('glavno').style.overflowY = 'hidden';  
     document.getElementById('lista').style.zIndex = -4;
   }
 </script>

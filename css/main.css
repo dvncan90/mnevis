@@ -400,6 +400,8 @@ lista {      /* Work */
 #buttonpc{display:block}
 }
 @media (max-width: 768px){
+	.close{right:-75px;}
+	.naslovna{ transition: 0s;}
 	.homelogo{width:50vw;
   max-width:1000px;}
 	

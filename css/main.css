@@ -76,10 +76,10 @@ canvas {
     height: 50px;
     position: fixed;
     margin-left: 0px;
-    border-top: 10px solid #343434;
+    border-top: 10px solid #0e0e0e;
     opacity: 1;
     top: 0px;
-    border-bottom: 1px solid #343434;
+    border-bottom: 2px solid #0e0e0e;
     z-index: -3;
 }
 
